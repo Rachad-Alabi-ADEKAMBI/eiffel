@@ -65,6 +65,100 @@
                </p>
             </div>
         </div>
+
+        <div class="content">
+            <div class="content__image">
+                <img src="" alt="">
+            </div>
+
+            <div class="content__text">
+                <h2 class="title">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                </h2>
+
+               <p class="text">
+               Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                <br>
+                <ul>
+                    <li> <i></i> fgsdfgdfgdfgdf</li>
+                    <li> <i></i> fgsdfgdfgdfgdf</li>
+                    <li> <i></i> fgsdfgdfgdfgdf</li>
+                </ul>
+               </p>
+            </div>
+        </div>
+
+        <div class="price">
+            <h2 class="title">
+                Notre grille trarifaire selon vos besoins
+            </h2>
+
+            <div class="price__list">
+                <div class="price">
+                    <div class="price__img">
+                        <img src="" alt="">
+                    </div>
+
+                    <h3>
+                            Skinbooster
+                        </h3>
+
+                        <p class="title">
+                            A partir de 200 eu
+                        </p>
+                </div>
+
+                <div class="price">
+                    <div class="price__img">
+                        <img src="" alt="">
+                    </div>
+
+                    <h3>
+                            Skinbooster
+                        </h3>
+
+                        <p class="title">
+                            A partir de 200 eu
+                        </p>
+                </div>
+
+                <div class="price">
+                    <div class="price__img">
+                        <img src="" alt="">
+                    </div>
+
+                    <h3>
+                            Skinbooster
+                        </h3>
+
+                        <p class="title">
+                            A partir de 200 eu
+                        </p>
+                </div>
+
+                <div class="price">
+                    <div class="price__img">
+                        <img src="" alt="">
+                    </div>
+
+                    <h3>
+                            Skinbooster
+                        </h3>
+
+                        <p class="title">
+                            A partir de 200 eu
+                        </p>
+                </div>
+            </div>
+
+            <div class="link">
+                <a href="">
+                    Prendre rendez-vous
+                </a>
+            </div>
+        </div>
+
+        <?php include 'footer.php'; ?>
     </div>
 </body>
 </html>
