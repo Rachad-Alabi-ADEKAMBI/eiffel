@@ -1,3 +1,355 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
 html, body {
-  background-color: purple;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  margin: auto;
+}
+
+.hero p {
+  width: 80%;
+}
+
+.container .hero {
+  height: 80vh;
+  width: 100%;
+  position: relative;
+  text-align: center;
+  padding-top: 20px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-image: url("public/images/pexels-samad-ismayilov-735552.jpg");
+}
+.container .hero__links {
+  margin: 15px auto;
+}
+.container .hero__links li {
+  display: inline;
+}
+.container .hero__links li a {
+  color: white;
+  margin: 10px;
+}
+.container .hero__links li a:hover {
+  color: yellow;
+}
+.container .hero__main {
+  float: right;
+  top: 200px;
+  right: 10px;
+  width: 40%;
+  position: absolute;
+  text-align: left;
+}
+.container .hero__main h1 {
+  font-family: "pacifico";
+  color: yellow;
+  margin: 15px auto;
+}
+.container .hero__main p {
+  margin: 15px auto;
+}
+.container .hero__main .line {
+  flex-direction: row;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.container .hero__main .line hr {
+  color: yellow;
+  width: 60%;
+}
+.container .hero__main .line a {
+  color: yellow;
+}
+.container .about {
+  flex-direction: row;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  flex-direction: row;
+  height: 80vh;
+  margin: 20px auto;
+}
+.container .about__infos {
+  flex: 1;
+  flex-direction: column;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: auto;
+  text-align: left;
+  padding-top: 0;
+  height: 400px;
+}
+.container .about__infos__content {
+  width: 80%;
+  margin: auto;
+}
+.container .about__infos__content__title {
+  font-family: "pacifico";
+  color: yellow;
+}
+.container .about__infos__content p {
+  margin: auto;
+}
+.container .about__infos__content__numbers {
+  flex-direction: row;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: 15px auto;
+}
+.container .about__image {
+  flex: 1;
+  width: 400px;
+  height: 400px;
+  width: 80%;
+  margin: 20px auto;
+  background-color: red;
+}
+.container .about__image img {
+  width: 350px;
+  border-radius: 15px;
+  height: 350px;
+  margin: auto;
+}
+.container .specialities {
+  display: block;
+  text-align: center;
+}
+.container .specialities h2 {
+  font-family: "pacifico";
+  color: yellow;
+}
+.container .specialities p {
+  margin: 15px auto;
+  width: 80%;
+}
+.container .specialities__list {
+  flex-direction: row;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: auto;
+}
+.container .specialities__list .speciality {
+  position: relative;
+  flex: 1;
+  margin: 15px;
+  border-radius: 15px;
+  width: 180px;
+  height: 200px;
+}
+.container .specialities__list .speciality img {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+}
+.container .specialities__list .speciality h3 {
+  position: absolute;
+  text-align: center;
+  left: 50%;
+  right: 50%;
+  top: 50%;
+  bottom: 50%;
+}
+.container .center {
+  background-color: black;
+  height: 400px;
+  text-align: center;
+  padding-top: 20px;
+}
+.container .center h2 {
+  font-family: "pacifico";
+  color: yellow;
+  margin: 5px auto;
+}
+.container .center p {
+  margin: 20px auto;
+  color: white;
+  width: 80%;
+}
+.container .center .slider {
+  width: 80%;
+  flex-direction: row;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: auto;
+}
+.container .center .slider__images {
+  width: 80%;
+  flex-direction: row;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: auto;
+}
+.container .center .slider__images img {
+  flex: 1;
+  border-radius: 15px;
+  width: 200px;
+  height: 200px;
+  margin: 15px;
+}
+.container .testimonies {
+  display: block;
+  text-align: center;
+}
+.container .testimonies h2 {
+  margin: 15px auto;
+  font-family: "pacifico";
+  color: yellow;
+}
+.container .testimonies p {
+  width: 80%;
+  margin: auto;
+}
+.container .testimonies__list {
+  width: 80%;
+  flex-direction: row;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 20px auto;
+}
+.container .testimonies__list .testimony {
+  flex: 1;
+  display: block;
+  text-align: left;
+}
+.container .testimonies__list .testimony__top {
+  display: grid;
+}
+.container .testimonies__list .testimony__text {
+  margin: 15px auto;
+}
+.container .blog {
+  text-align: center;
+  display: block;
+  margin: auto;
+}
+.container .blog h2 {
+  margin: 15px auto;
+  font-family: "pacifico";
+  color: yellow;
+}
+.container .blog p {
+  width: 80%;
+  margin: auto;
+}
+.container .blog .cards {
+  width: 80%;
+  flex-direction: row;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background-color: red;
+  margin: auto;
+}
+.container .blog .cards__card {
+  flex: 1;
+  margin: 15px;
+  height: 300px;
+}
+.container .blog .cards__card__info {
+  background-color: black;
+  top: 180px;
+  text-align: left;
+}
+.container .blog .cards__card__info img {
+  width: 100%;
+  height: 100%;
+}
+.container .blog .cards__card__info h4 {
+  font-weight: bold;
+}
+.container .blog .cards__card__info .text {
+  width: 80%;
+}
+.container .blog .link {
+  margin: auto;
+  background-color: yellow;
+  height: 50px;
+  width: auto;
+}
+.container .blog .link a {
+  color: white;
+}
+.container .speciality-hero {
+  height: 80vh;
+  width: 100%;
+  position: relative;
+  text-align: center;
+  padding-top: 20px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  background: url("public/images/epilation-laser-centre-du-champs-de-mars-1536x1171.jpg");
+}
+.container .speciality-hero h1 {
+  font-family: "pacifico";
+  color: yellow;
+  margin: 120px auto;
+}
+.container .speciality-hero .btn {
+  height: 40px;
+  width: 150px;
+  border-radius: 5px;
+  border: 2px white solid;
+  text-align: center;
+  margin: 30px auto;
+}
+.container .speciality-hero .btn a {
+  color: white;
+}
+.container .content {
+  width: 100%;
+  flex-direction: row;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  height: 50vh;
+  padding-top: 40px;
+}
+.container .content__text {
+  flex: 1;
+}
+.container .content__text__content {
+  width: 80%;
+  margin: auto;
+}
+.container .content__text__content h2 {
+  font-family: "pacifico";
+  color: yellow;
+}
+.container .content__image {
+  flex: 1;
+}
+.container .content__image__content {
+  margin: 40px auto;
+  flex-direction: row;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-top: 10px;
+}
+.container .content__image__content .item {
+  flex: 0.5;
+  height: 80px;
+  border-radius: 30px;
+  border: 2px black solid;
+  text-align: center;
+  margin: 15px;
 }/*# sourceMappingURL=main.css.map */

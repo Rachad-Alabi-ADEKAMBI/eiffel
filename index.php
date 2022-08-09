@@ -7,30 +7,45 @@
 </head>
 <body>
    <div class="container">
-   <div class="header">
-        <div class="header__top">
-
-        </div>
-
-        <div class="header__main">
-
-        </div>
-    </div>
+    <?php include    'header.php'; ?>
 
     <div class="hero">
-        <div class="hero__links">
+        <ul class="hero__links">
+            <li>
             <a href="l">
                 Epilation laser
             </a>
 
+            </li>
+
+            <li>
             <a href="l">
                 Epilation laser
             </a>
 
+            </li>
+
+            <li>
             <a href="l">
                 Epilation laser
             </a>
-        </div>
+
+            </li>
+
+            <li>
+            <a href="l">
+                Epilation laser
+            </a>
+
+            </li>
+
+            <li>
+            <a href="l">
+                Epilation laser
+            </a>
+
+            </li>
+        </ul>
 
         <div class="hero__main">
             <h1>
@@ -52,48 +67,54 @@
 
     <div class="about">
         <div class="about__infos">
-            <h2 class="about__infos__title">
-                Notre institut en quelques 
-            </h2>
+            <div class="about__infos__content">
+                <h2 class="about__infos__title">
+                    Notre institut en quelques 
+                </h2>
 
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                Accusantium, repellat, porro doloremque fugit odio eius blanditiis saepe impedit
-                 facilis laborum aut laudantium ipsam magnam vel atque obcaecati veniam ex. Optio.
-            </p>
-
-            <div class="about__infos__numbers">
-                <div class="number">
-                    <div class="span">
-                        +99
-                    </div> <br>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                    Accusantium, repellat, porro doloremque fugit odio eius blanditiis saepe impedit
+                    facilis laborum aut laudantium ipsam magnam vel atque obcaecati veniam ex. Optio.
+                    lorem. Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                    Accusantium, repellat, porro doloremque fugit odio eius blanditiis saepe impedit
+                    facilis laborum aut laudantium ipsam magnam vel atque obcaecati veniam ex. Optio.
                     lorem
-                </div>
+                </p>
 
-                <div class="number">
-                    <div class="span">
-                        +99
-                    </div> <br>
-                    lorem
-                </div>
+                <div class="about__infos__numbers">
+                    <div class="number">
+                        <div class="span">
+                            +99
+                        </div> <br>
+                        lorem
+                    </div>
 
-                <div class="number">
-                    <div class="span">
-                        +99
-                    </div> <br>
-                    lorem
+                    <div class="number">
+                        <div class="span">
+                            +99
+                        </div> <br>
+                        lorem
+                    </div>
+
+                    <div class="number">
+                        <div class="span">
+                            +99
+                        </div> <br>
+                        lorem
+                    </div>
                 </div>
             </div>
         </div>
 
         <div class="about__image">
-            <img src="" alt="">
+            <img src="public/images/pexels-elina-fairytale-3865530.jpg" alt="">
         </div>
     </div>
 
     <div class="specialities">
         <h2 class='title'>
-            NOS SPECIALITES
+            NOS SPECIALITS
         </h2>
 
         <p class="text">
@@ -104,21 +125,44 @@
         
         <div class="specialities__list">
                 <div class="speciality">
-                    <img src="" alt="">
+                    <img src="public/images/pexels-orhun-rüzgar-öz-10822254.jpg" alt="">
                     <h3>
                         EPILATION LASER
                     </h3>
                 </div>
 
                 <div class="speciality">
-                    <img src="" alt="">
+                    <img src="public/images/pexels-orhun-rüzgar-öz-10822254.jpg" alt="">
                     <h3>
                         EPILATION LASER
                     </h3>
                 </div>
 
                 <div class="speciality">
-                    <img src="" alt="">
+                    <img src="public/images/pexels-orhun-rüzgar-öz-10822254.jpg" alt="">
+                    <h3>
+                        EPILATION LASER
+                    </h3>
+                </div>
+        </div>
+
+        <div class="specialities__list">
+                <div class="speciality">
+                    <img src="public/images/pexels-orhun-rüzgar-öz-10822254.jpg" alt="">
+                    <h3>
+                        EPILATION LASER
+                    </h3>
+                </div>
+
+                <div class="speciality">
+                    <img src="public/images/pexels-orhun-rüzgar-öz-10822254.jpg" alt="">
+                    <h3>
+                        EPILATION LASER
+                    </h3>
+                </div>
+
+                <div class="speciality">
+                    <img src="public/images/pexels-orhun-rüzgar-öz-10822254.jpg" alt="">
                     <h3>
                         EPILATION LASER
                     </h3>
@@ -139,11 +183,11 @@
             placeat tempora dolorum ad iure fuga dolore excepturi natus?
         </P>
 
-        <div class="Slider">
+        <div class="slider">
             <div class="slider__images">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
+                <img src="public/images/pexels-orhun-rüzgar-öz-10822254.jpg    " alt="">
+                <img src="public/images/pexels-elina-fairytale-3865530.jpg" alt="">
+                <img src="public/images/pexels-gustavo-fring-5622040.jpg" alt="">
                 
             </div>
 
@@ -156,24 +200,17 @@
     </div>
 
     <div class="testimonies">
-        <h2 class="title">
+        <h2 class="subtitle">
             LES TEMOIGNAGES
         </h2>
 
         <p>
-            lorem
+            Lorem ipsum dolor sit amet consectetur adipisicing
+             elit. Omnis blanditiis aut velit perferendis 
+             dolorem tenetur est quod veniam dicta magnam.
         </p>
 
         <div class="testimonies__list">
-            <div class="testimony">
-                    <div class="testimony__top">
-                        <img src="" alt="">
-                        <span>author</span>
-                        <div class="stars">
-                            ****
-                        </div>
-                    </div>
-            </div>
 
             <div class="testimony">
                     <div class="testimony__top">
@@ -183,7 +220,13 @@
                             ****
                         </div>
                     </div>
-            </div>
+
+                    <p class="testimony__text">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing 
+                        elit. Dolorem quos asperiores rerum quibusdam
+                         temporibus. Laborum, eius maiores.
+                    </p>
+            </div> 
 
             <div class="testimony">
                     <div class="testimony__top">
@@ -193,7 +236,14 @@
                             ****
                         </div>
                     </div>
-            </div>
+
+                    <p class="testimony__text">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing 
+                        elit. Dolorem quos asperiores rerum quibusdam
+                         temporibus. Laborum, eius maiores.
+                    </p>
+            </div> 
+
 
             <div class="testimony">
                     <div class="testimony__top">
@@ -203,25 +253,47 @@
                             ****
                         </div>
                     </div>
+
+                    <p class="testimony__text">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing 
+                        elit. Dolorem quos asperiores rerum quibusdam
+                         temporibus. Laborum, eius maiores.
+                    </p>
+            </div> 
+
+            <div class="testimony">
+                    <div class="testimony__top">
+                        <img src="" alt="">
+                        <span>author</span>
+                        <div class="stars">
+                            ****
+                        </div>
+                    </div>
+
+                    <p class="testimony__text">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing 
+                        elit. Dolorem quos asperiores rerum quibusdam
+                         temporibus. Laborum, eius maiores.
+                    </p>
             </div> 
         </div>
     </div>
 
     <div class="blog">
-        <h2 class="title">
+        <h2 class="tsubtitle">
             NOTRE BLOG
         </h2>
 
-        <P>
+        <p class="text">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. 
             Repellat, assumenda, omnis perspiciatis, maxime voluptates sequi deserunt 
             inventore voluptate illo exercitationem cum ducimus architecto. 
             Eum ipsam, incidunt dolorem ducimus animi reiciendis!
         </P>
 
-        <div class="cards_">
+        <div class="cards">
             <div class="cards__card">
-                    <img src="" alt="">
+                    <img src="public/images/0ca6f3c43d3ca79a66945c464b16017c.jpeg" alt="">
                     <div class="card__info">
                         <h4>
                             lorem
@@ -234,7 +306,47 @@
 
                         <div class="time">
                             <i></i>
-                        4 mois
+                            4 mois
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cards__card">
+                    <img src="public/images/0ca6f3c43d3ca79a66945c464b16017c.jpeg" alt="">
+                    <div class="card__info">
+                        <h4>
+                            lorem
+                        </h4>
+
+                        <p class="text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Minus officiis enim architecto, sapiente eveniet nemo commodi
+                        </p>
+
+                        <div class="time">
+                            <i></i>
+                            4 mois
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cards__card">
+                    <img src="public/images/0ca6f3c43d3ca79a66945c464b16017c.jpeg" alt="">
+                    <div class="card__info">
+                        <h4>
+                            lorem
+                        </h4>
+
+                        <p class="text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Minus officiis enim architecto, sapiente eveniet nemo commodi
+                        </p>
+
+                        <div class="time">
+                            <i></i>
+                            4 mois
                         </div>
                     </div>
                 </div>
@@ -242,41 +354,13 @@
         </div>
 
        <div class="link">
-        <a href="blog.php">
-            Lire plus d'articles
-        </a>
+            <a href="blog.php">
+                Lire plus d'articles
+            </a>
        </div>
     </div>
 
-    <div class="footer">
-        <div class="footer__log">
-            <img src="" alt="">
-        </div>
-
-        <div class="footer__links">
-            <a href="\"></a>
-            <a href=""></a>
-            <a href=""></a>
-        </div>
-
-        <div class="footer__infos">
-            <div class="info">
-                Paris 11 <br>
-                <i></i>0136677br !
-                <a href="">
-                    Prendre rdv
-                </a>
-            </div>
-
-            <div class="info">
-                Paris 11 <br>
-                <i></i>0136677br !
-                <a href="">
-                    Prendre rdv
-                </a>
-            </div>
-        </div>
-    </div>
+    <?php include 'footer.php'; ?>
 
    </div>
 </body>

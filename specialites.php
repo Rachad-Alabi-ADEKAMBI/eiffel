@@ -9,7 +9,7 @@
     <div class="container">
         <?php include 'header.php;' ?>
 
-        <div class="speciality-hero">
+        <div class="hero speciality-hero">
             <h1>
                 Soins visages
             </h1>
@@ -20,7 +20,7 @@
                 consequuntur aut error dicta! Vitae, rerum. Dignissimos possimus illum in doloribus sint.
             </p>
 
-            <div class="link">
+            <div class="btn">
                 <a href="">
                     En savoir plus
                 </a>
@@ -29,21 +29,42 @@
 
         <div class="content">
             <div class="content__text">
-                <h2 class="title">
+                <div class="content__text__content">
+                <h2 class="subtitle">
                     Des traitements adaptes 
                 </h2>
 
                 <p class="text">
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
                     Mollitia, doloribus? Tenetur totam laboriosam cupiditate accusantium nam, maiores, animi 
-                    ratione iusto dolore illo dolor nihil ad ipsum aspernatur illum exercitationem quos!
+                    ratione iusto dolore illo dolor nihil ad ipsum aspernatur illum 
+                    exercitationem quos!
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                    Mollitia, doloribus? Tenetur totam laboriosam cupiditate accusantium nam, maiores, animi 
+                    ratione iusto dolore illo dolor nihil ad ipsum aspernatur illum 
+                    exercitationem quos!
                 </p>
+                </div>
             </div>
 
             <div class="content__image">
-                <div class="image">
-
+                <div class="content__image__content">
+                <div class="item">
+                    i
+                    <span>Hydrafacial</span>
                 </div>
+
+                <div class="item">
+                    i
+                    <span>Hydrafacial</span>
+                </div>
+
+                <div class="item">
+                    i
+                    <span>Hydrafacial</span>
+                </div>
+                </div>
+
             </div>
         </div>
 

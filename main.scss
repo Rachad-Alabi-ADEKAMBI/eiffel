@@ -1,3 +1,436 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+$yellow: yellow;
+$black: black;
+$white: white;
+
+@mixin title ($color:$yellow) {
+    font-family: 'pacifico';
+    color: $color;
+}
+
+@mixin subtitle(){
+    font-family: 'pacifico';
+    color: $yellow;
+}
+
+@mixin flex($flex-direction:row){
+    flex-direction: $flex-direction;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+@mixin image(){
+    border-radius: 15px;
+
+}
+
+@mixin text{
+
+}
+
+@mixin content(){
+    width: 80%;
+}
+
+@mixin link {
+    background-color: $yellow;
+    height: 50px;
+    width: auto;
+}
+
+@mixin btn{
+    height: 40px;
+    width: 150px;
+    border-radius: 5px;
+    border: 2px white solid;
+    text-align: center;
+}
+
+@mixin hero{
+    height: 80vh;
+         width: 100%;
+        position: relative;
+        text-align: center;
+        padding-top: 20px;
+        background-repeat: no-repeat;
+        background-size:contain;
+        background-position: center;
+        
+}
+
 html, body{
-    background-color: purple;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+p{
+    @include text();
+    margin: auto
+}
+
+.hero p{
+    @include content();
+}
+
+.container{
+    .hero{
+        @include hero();
+        background-image: url('public/images/pexels-samad-ismayilov-735552.jpg');
+     
+
+        &__links{
+            margin: 15px auto;
+            
+            li{
+                display: inline;
+                a{
+                    color: white;
+                    margin: 10px;
+                }
+
+                a:hover{
+                    color: yellow;
+                }
+            }
+        }
+
+        &__main{
+            float: right;
+            top: 200px;
+            right: 10px;
+            width: 40%;
+            position: absolute;
+            text-align: left;
+
+            h1{
+                @include title();
+                margin: 15px auto;
+            }
+
+            p{
+                margin: 15px auto;
+            }
+
+            .line{
+                @include flex(row);
+                hr{
+                    color: $yellow;
+                    width: 60%;
+                }
+
+                a{
+                    color: $yellow;
+                }
+
+
+            }
+
+
+        }
+    }
+
+    .about{
+        @include flex($flex-direction:row);
+        width: 100%;
+        flex-direction: row;
+        height: 80vh;
+        margin: 20px auto;
+
+        &__infos{
+            flex: 1;
+            @include flex($flex-direction:column);
+            @include content();
+            margin: auto;
+            text-align: left;
+            padding-top: 0;
+            height: 400px;
+
+            &__content{
+                @include content();
+                margin: auto;
+                &__title{
+                    @include title();
+                }
+    
+                p{
+                    margin: auto;
+                }
+    
+                &__numbers{
+                    @include flex();
+                    @include content();
+                    margin: 15px auto;
+                }
+            }
+        }
+
+        &__image{
+            flex: 1;
+            width: 400px;
+            height: 400px;
+            @include content();
+            margin: 20px auto;
+            background-color: red;
+
+
+            img{
+                width: 350px;
+                @include image();
+                height: 350px;
+                margin: auto;
+            }
+            }
+        }
+
+        .specialities{
+            display: block;
+            text-align: center;
+
+            h2{
+                @include subtitle();
+            }
+
+            p{
+                margin: 15px auto;
+                @include content();
+            }
+
+            &__list{
+                @include flex();
+                @include content();
+                margin: auto;
+
+                    .speciality{
+                        position: relative;
+                        flex: 1;
+                        margin: 15px;
+                        @include image;
+                        width: 180px;
+                        height: 200px;
+                       
+                        img{
+                            width: 100%;
+                            height: 100%;
+                            @include image();
+                        }
+
+                        h3{
+                            position: absolute;
+                            text-align: center;
+                            left: 50%;
+                            right: 50%;
+                            top: 50%;
+                            bottom: 50%;
+                        
+                        }
+                    }
+                }
+
+            }
+
+    .center{
+        background-color: $black;
+        height: 400px;
+        text-align: center;
+        padding-top: 20px;
+
+        h2{
+            @include subtitle();
+            margin: 5px auto;
+        }
+
+        p{
+            margin: 20px auto;
+            color: $white;
+            @include content();
+        }
+
+        .slider{
+            @include content();
+            @include flex();
+            margin: auto;
+
+            &__images{
+                @include content();
+                @include flex();
+                margin: auto;
+                img{
+                    flex: 1;
+                    @include image();
+                    width: 200px;
+                    height: 200px;
+                    margin: 15px ;
+                }
+            }
+        }
+    }
+
+    .testimonies{
+        display: block;
+        text-align: center;
+
+        h2{
+            margin: 15px auto;
+            @include subtitle();
+        }
+
+        p{
+           @include content();
+           margin: auto
+        }
+
+        &__list{
+            @include content();
+            @include flex();
+            margin: 20px auto;
+
+            .testimony{
+                flex: 1;
+                display: block;
+                text-align: left;
+
+                &__top{
+                    display: grid;
+                }
+
+                &__text{
+                    margin: 15px auto;
+                }
+            }
+        }
+
+    }
+
+    .blog{
+        text-align: center;
+        display: block;
+        margin: auto;
+        
+
+        h2{
+            margin: 15px auto;
+            @include subtitle();
+        }
+
+        p{
+            @include content();
+            margin: auto
+        }
+
+        .cards{
+            @include content();
+            @include flex;
+            background-color: red;
+            margin: auto;
+
+            &__card{
+                flex: 1;
+                margin: 15px;
+                height: 300px;
+
+                &__info{
+                    background-color: black;
+                    top: 180px;
+                    text-align: left;
+
+                    img{
+                        width: 100%;
+                        height: 100%;
+                    }
+
+                    h4{
+                        font-weight: bold;
+                    }
+
+                    .text{
+                        width: 80%;
+                    }
+                }
+            }
+        }
+
+        .link{
+            margin: auto;
+            @include link();
+
+            a{
+                color: white;
+            }
+        }
+
+
+    }
+
+    .speciality-hero{
+       @include hero();
+       background: url('public/images/epilation-laser-centre-du-champs-de-mars-1536x1171.jpg');
+
+       h1{
+        @include title();
+        margin: 120px auto;
+       }
+
+       p{
+        
+       }
+
+       .btn{
+            @include btn();
+            margin: 30px auto;
+
+            a{
+                color: white;
+            }
+       }
+    }
+
+    .content{
+        width: 100%;
+        @include flex;
+        height: 50vh;
+        padding-top: 40px;
+
+        &__text{
+            
+            flex: 1;
+           &__content{
+            @include content();
+            margin: auto;
+
+                h2{
+                    @include subtitle()
+                }
+           }
+        }
+
+        &__image{
+            flex: 1;
+
+            &__content{
+                margin: 40px auto;
+                @include flex();
+                padding-top: 10px;
+
+                
+                .item{
+                    flex: 0.5;
+                    height: 80px;
+                    border-radius: 30px;
+                    border: 2px $black solid;
+                    text-align: center;
+                    margin: 15px ;
+                }
+            }
+
+            
+        }
+    }
+
+    
+
 }
