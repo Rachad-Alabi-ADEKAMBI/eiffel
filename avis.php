@@ -19,14 +19,19 @@
                     </h1>
 
                     <form action="" method=''>
-                        <label for="">
-                            <input type="text" placeholder="Nom" required>
-                            <input type="text" placeholder="Nom" required>
-                        </label>
+                      <div class="name">
+                            <label for="">
+                                <input type="text" placeholder="Nom">
+                            </label>
 
-                        <label for="">
-                            <input type="textarea" placeholder="Votre message">
-                        </label>
+                            <label for="">
+                                <input type="text" placeholder="Email">
+                            </label>
+                      </div>
+
+                      <label for="">
+                        <input type="text" class='message' placeholder="Votre message">
+                      </label>
 
                         <label for="">
                             <button>
@@ -41,12 +46,10 @@
                 <div class="avis__image">
                     <div class="avis__image__white">
                         <div class="avis-author">
-                            <img src="" alt="">
+                            <img src="public/images/27de1f60e3c1a90a389aa6794cef999b.jpeg" alt="">
                             <p class="name">
                                 Cassandra T.
-                            </p>
-
-                            <p class="stars">
+                            <br>
                                 ******
                             </p>
 
@@ -58,8 +61,8 @@
                         </div>
                     </div>
 
-                    <div class="avis__image__white">
-                        <img src="" alt="">
+                    <div class="avis__image__black">
+                        <img src="public/images/pexels-samad-ismayilov-735552.jpg" alt="">
                     </div>
                 </div>
             </div>
@@ -76,7 +79,7 @@
                     <div class=''>
 
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
                             Possimus soluta cupiditate nisi perferendis adipisci officia quidem obcaecati
                             quasi ea recusandae maxime odit, itaque similique mollitia est provident. Doloribus, sint tenetur.
                         </p>
@@ -98,7 +101,7 @@
                     <div class=''>
 
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
                             Possimus soluta cupiditate nisi perferendis adipisci officia quidem obcaecati
                             quasi ea recusandae maxime odit, itaque similique mollitia est provident. Doloribus, sint tenetur.
                         </p>
@@ -120,7 +123,7 @@
                     <div class=''>
 
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
                             Possimus soluta cupiditate nisi perferendis adipisci officia quidem obcaecati
                             quasi ea recusandae maxime odit, itaque similique mollitia est provident. Doloribus, sint tenetur.
                         </p>
@@ -141,6 +144,6 @@
             </ul>
         <?php include 'footer.php'; ?>
     </div>
-    
+
 </body>
 </html>

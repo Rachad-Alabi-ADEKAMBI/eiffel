@@ -3,7 +3,7 @@
 <head>
    <?php include 'meta.php'; ?>
 
-    <title>Dblog</title>
+    <title>blog</title>
 </head>
 <body>
     <div class="container">
@@ -11,13 +11,13 @@
 
         <div class="blog-hero">
             <div class="blog-hero__image">
-                <img src="" alt="" class="blog-hero__image__img">
+                <img src="public/images/epilation-laser-centre-du-champs-de-mars-1536x1171.jpg" alt="" class="blog-hero__image__img">
 
                 <span>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                      Harum dolorem possimus optio doloribus magnam repellendus
                      atque beatae sint? Quasi expedita vitae quaerat.
-                </span>
+                </span> <br>
 
                 <p>
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio qui
@@ -28,7 +28,7 @@
 
             <div class="blog-hero__articles">
                 <div class="article">
-                    <img src="" alt="">
+                    <img src="public/images/epilation-laser-centre-du-champs-de-mars-1536x1171.jpg" alt="">
                     <span>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
                         consequuntur dignissimos facere dolorem laudantium nisi pariatur
@@ -36,7 +36,7 @@
                 </div>
 
                 <div class="article">
-                    <img src="" alt="">
+                    <img src="public/images/epilation-laser-centre-du-champs-de-mars-1536x1171.jpg" alt="">
                     <span>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
                         consequuntur dignissimos facere dolorem laudantium nisi pariatur
@@ -44,96 +44,107 @@
                 </div>
 
                 <div class="article">
-                    <img src="" alt="">
+                    <img src="public/images/epilation-laser-centre-du-champs-de-mars-1536x1171.jpg" alt="">
                     <span>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
                         consequuntur dignissimos facere dolorem laudantium nisi pariatur
                     </span>
                 </div>
-
 
             </div>
         </div>
+
+
 
         <div class="articles">
-            <div class="article">
-                <img src="" alt="">
 
-               <p class="date">
-                22 juillet
-               </p>
+            <h2>
+                Tous nos articles
+            </h2>
 
-               <p class="article__title">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat, quasi.
-               </p>
+            <div class="articles__content">
+                <div class="article">
+                    <img src="public/images/epilation-laser-centre-du-champs-de-mars-1536x1171.jpg" alt="">
 
-               <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem, excepturi
-                 nemo inventore quia aperiam commodi a molestiae...
-               </p>
+                    <p class="date">
+                        22 juillet
+                    </p>
+
+                    <p class="article__title">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat, quasi.
+                    </p>
+
+                    <p>
+                        Lorem ipsum dolor sit amet,
+                        consetetur sadipscing elitr,
+                        sed...
+                    </p>
+                </div>
+
+                <div class="article">
+                    <img src="public/images/epilation-laser-centre-du-champs-de-mars-1536x1171.jpg" alt="">
+
+                    <p class="date">
+                        22 juillet
+                    </p>
+
+                    <p class="article__title">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat, quasi.
+                    </p>
+
+                    <p>
+                        Lorem ipsum dolor sit amet,
+                        consetetur sadipscing elitr,
+                        sed...
+                    </p>
+                </div>
+
+                <div class="article">
+                    <img src="public/images/epilation-laser-centre-du-champs-de-mars-1536x1171.jpg" alt="">
+
+                    <p class="date">
+                        22 juillet
+                    </p>
+
+                    <p class="article__title">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat, quasi.
+                    </p>
+
+                    <p>
+                        Lorem ipsum dolor sit amet,
+                        consetetur sadipscing elitr,
+                        sed...
+                    </p>
+                </div>
+
+                <div class="article">
+                    <img src="public/images/epilation-laser-centre-du-champs-de-mars-1536x1171.jpg" alt="">
+
+                    <p class="date">
+                        22 juillet
+                    </p>
+
+                    <p class="article__title">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat, quasi.
+                    </p>
+
+                    <p>
+                        Lorem ipsum dolor sit amet,
+                        consetetur sadipscing elitr,
+                        sed...
+                    </p>
+                </div>
             </div>
 
-            <div class="article">
-                <img src="" alt="">
+            <ul class="pagination">
+                <li><a href="">1</a></li>
+                <li><a href="">2</a></li>
+                <li><a href="">3</a></li>
+                <li><a href="">4</a></li>
+                <li><a href="">5</a></li>
+            </ul>
 
-               <p class="date">
-                22 juillet
-               </p>
-
-               <p class="article__title">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat, quasi.
-               </p>
-
-               <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem, excepturi
-                 nemo inventore quia aperiam commodi a molestiae...
-               </p>
-            </div>
-
-            <div class="article">
-                <img src="" alt="">
-
-               <p class="date">
-                22 juillet
-               </p>
-
-               <p class="article__title">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat, quasi.
-               </p>
-
-               <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem, excepturi
-                 nemo inventore quia aperiam commodi a molestiae...
-               </p>
-            </div>
-
-            <div class="article">
-                <img src="" alt="">
-
-               <p class="date">
-                22 juillet
-               </p>
-
-               <p class="article__title">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat, quasi.
-               </p>
-
-               <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem, excepturi
-                 nemo inventore quia aperiam commodi a molestiae...
-               </p>
-            </div>
+            <?php include 'footer.php'; ?>
         </div>
-
-        <ul class="pagination">
-            <li><a href="">1</a></li>
-            <li><a href="">2</a></li>
-            <li><a href="">3</a></li>
-            <li><a href="">4</a></li>
-            <li><a href="">5</a></li>
-        </ul>
-
-         <?php include 'footer.php'; ?>
-    </div>
 </body>
 </html>
