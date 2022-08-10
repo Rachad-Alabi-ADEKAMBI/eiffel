@@ -7,7 +7,7 @@
 </head>
 <body>
    <div class="container">
-    <?php include    'header.php'; ?>
+    <?php include  'header.php'; ?>
 
     <div class="hero">
         <ul class="hero__links">
@@ -53,8 +53,8 @@
             </h1>
 
             <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, 
-                ut quidem repellat repudiandae fugiat optio natus debitis est minima ullam, 
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam,
+                ut quidem repellat repudiandae fugiat optio natus debitis est minima ullam,
                 aliquid iure molestiae? Suscipit rem pariatur est qui blanditiis sint.
             </p>
 
@@ -69,14 +69,14 @@
         <div class="about__infos">
             <div class="about__infos__content">
                 <h2 class="about__infos__title">
-                    Notre institut en quelques 
+                    Notre institut en quelques
                 </h2>
 
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                     Accusantium, repellat, porro doloremque fugit odio eius blanditiis saepe impedit
                     facilis laborum aut laudantium ipsam magnam vel atque obcaecati veniam ex. Optio.
-                    lorem. Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                    lorem. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                     Accusantium, repellat, porro doloremque fugit odio eius blanditiis saepe impedit
                     facilis laborum aut laudantium ipsam magnam vel atque obcaecati veniam ex. Optio.
                     lorem
@@ -118,11 +118,11 @@
         </h2>
 
         <p class="text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
             A molestiae animi ad officia accusamus debitis voluptatem vel reprehenderit,
              temporibus commodi ab, maiores suscipit fugiat veniam veritatis facere nam, nulla laudantium?
         </p>
-        
+
         <div class="specialities__list">
                 <div class="speciality">
                     <img src="public/images/pexels-orhun-rüzgar-öz-10822254.jpg" alt="">
@@ -177,9 +177,9 @@
         </h2>
 
         <P class="text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Quod magnam molestias officiis placeat maiores 
-            quaerat cupiditate labore aliquam? Illo aliquam voluptates 
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Quod magnam molestias officiis placeat maiores
+            quaerat cupiditate labore aliquam? Illo aliquam voluptates
             placeat tempora dolorum ad iure fuga dolore excepturi natus?
         </P>
 
@@ -188,7 +188,7 @@
                 <img src="public/images/pexels-orhun-rüzgar-öz-10822254.jpg    " alt="">
                 <img src="public/images/pexels-elina-fairytale-3865530.jpg" alt="">
                 <img src="public/images/pexels-gustavo-fring-5622040.jpg" alt="">
-                
+
             </div>
 
             <div class="slider__controls">
@@ -206,7 +206,7 @@
 
         <p>
             Lorem ipsum dolor sit amet consectetur adipisicing
-             elit. Omnis blanditiis aut velit perferendis 
+             elit. Omnis blanditiis aut velit perferendis
              dolorem tenetur est quod veniam dicta magnam.
         </p>
 
@@ -222,11 +222,11 @@
                     </div>
 
                     <p class="testimony__text">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing 
+                        Lorem ipsum dolor sit amet consectetur, adipisicing
                         elit. Dolorem quos asperiores rerum quibusdam
                          temporibus. Laborum, eius maiores.
                     </p>
-            </div> 
+            </div>
 
             <div class="testimony">
                     <div class="testimony__top">
@@ -238,11 +238,11 @@
                     </div>
 
                     <p class="testimony__text">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing 
+                        Lorem ipsum dolor sit amet consectetur, adipisicing
                         elit. Dolorem quos asperiores rerum quibusdam
                          temporibus. Laborum, eius maiores.
                     </p>
-            </div> 
+            </div>
 
 
             <div class="testimony">
@@ -255,11 +255,11 @@
                     </div>
 
                     <p class="testimony__text">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing 
+                        Lorem ipsum dolor sit amet consectetur, adipisicing
                         elit. Dolorem quos asperiores rerum quibusdam
                          temporibus. Laborum, eius maiores.
                     </p>
-            </div> 
+            </div>
 
             <div class="testimony">
                     <div class="testimony__top">
@@ -271,11 +271,11 @@
                     </div>
 
                     <p class="testimony__text">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing 
+                        Lorem ipsum dolor sit amet consectetur, adipisicing
                         elit. Dolorem quos asperiores rerum quibusdam
                          temporibus. Laborum, eius maiores.
                     </p>
-            </div> 
+            </div>
         </div>
     </div>
 
@@ -285,9 +285,9 @@
         </h2>
 
         <p class="text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Repellat, assumenda, omnis perspiciatis, maxime voluptates sequi deserunt 
-            inventore voluptate illo exercitationem cum ducimus architecto. 
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Repellat, assumenda, omnis perspiciatis, maxime voluptates sequi deserunt
+            inventore voluptate illo exercitationem cum ducimus architecto.
             Eum ipsam, incidunt dolorem ducimus animi reiciendis!
         </P>
 
@@ -300,7 +300,7 @@
                         </h4>
 
                         <p class="text">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
                             Minus officiis enim architecto, sapiente eveniet nemo commodi
                         </p>
 
@@ -320,7 +320,7 @@
                         </h4>
 
                         <p class="text">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
                             Minus officiis enim architecto, sapiente eveniet nemo commodi
                         </p>
 
@@ -340,7 +340,7 @@
                         </h4>
 
                         <p class="text">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
                             Minus officiis enim architecto, sapiente eveniet nemo commodi
                         </p>
 

@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
 html, body {
   box-sizing: border-box;
+  line-height: 1.7em;
 }
 
 a {
@@ -8,6 +9,7 @@ a {
 }
 
 p {
+  text-align: justify;
   margin: auto;
 }
 
@@ -15,6 +17,79 @@ p {
   width: 80%;
 }
 
+.link a {
+  color: white;
+}
+
+.container .header {
+  width: 100%;
+  display: block;
+  height: 250px;
+}
+.container .header__top {
+  background-color: black;
+  height: 50px;
+  width: 100%;
+}
+.container .header__top .adress-top {
+  float: right;
+  color: #E0C15B;
+}
+.container .header__main {
+  width: 100%;
+  background-color: white;
+  flex-direction: row;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.container .header__main__content {
+  width: 100%;
+  height: 110px;
+  flex-direction: row;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.container .header__main__content .logo img {
+  width: 110px;
+  height: 110px;
+}
+.container .header__main__content .menu {
+  margin: auto;
+  width: 60%;
+}
+.container .header__main__content .menu li {
+  display: inline;
+}
+.container .header__main__content .menu li a {
+  color: black;
+}
+.container .header__main__content .menu li a:hover {
+  color: #E0C15B;
+}
+.container .header__main .adress {
+  color: black;
+  margin: auto auto 20px auto;
+}
+.container .header__bottom {
+  height: 80px;
+  background-color: black;
+  text-align: center;
+}
+.container .header__bottom .treatments {
+  text-align: center;
+  margin: auto;
+}
+.container .header__bottom .treatments li {
+  display: inline;
+}
+.container .header__bottom .treatments li a {
+  color: white;
+}
+.container .header__bottom .treatments li a:hover {
+  color: #E0C15B;
+}
 .container .hero {
   height: 80vh;
   width: 100%;
@@ -25,6 +100,9 @@ p {
   background-size: contain;
   background-position: center;
   background-image: url("public/images/pexels-samad-ismayilov-735552.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 .container .hero__links {
   margin: 15px auto;
@@ -49,7 +127,7 @@ p {
 }
 .container .hero__main h1 {
   font-family: "pacifico";
-  color: yellow;
+  color: #E0C15B;
   margin: 15px auto;
 }
 .container .hero__main p {
@@ -62,11 +140,11 @@ p {
   flex-wrap: wrap;
 }
 .container .hero__main .line hr {
-  color: yellow;
+  color: #E0C15B;
   width: 60%;
 }
 .container .hero__main .line a {
-  color: yellow;
+  color: #E0C15B;
 }
 .container .about {
   flex-direction: row;
@@ -96,7 +174,7 @@ p {
 }
 .container .about__infos__content__title {
   font-family: "pacifico";
-  color: yellow;
+  color: #E0C15B;
 }
 .container .about__infos__content p {
   margin: auto;
@@ -128,8 +206,10 @@ p {
   text-align: center;
 }
 .container .specialities h2 {
-  font-family: "pacifico";
-  color: yellow;
+  font-family: "roboto";
+  color: #E0C15B;
+  line-height: 1.2em;
+  font-size: 2.5em;
 }
 .container .specialities p {
   margin: 15px auto;
@@ -171,8 +251,10 @@ p {
   padding-top: 20px;
 }
 .container .center h2 {
-  font-family: "pacifico";
-  color: yellow;
+  font-family: "roboto";
+  color: #E0C15B;
+  line-height: 1.2em;
+  font-size: 2.5em;
   margin: 5px auto;
 }
 .container .center p {
@@ -209,8 +291,10 @@ p {
 }
 .container .testimonies h2 {
   margin: 15px auto;
-  font-family: "pacifico";
-  color: yellow;
+  font-family: "roboto";
+  color: #E0C15B;
+  line-height: 1.2em;
+  font-size: 2.5em;
 }
 .container .testimonies p {
   width: 80%;
@@ -242,8 +326,10 @@ p {
 }
 .container .blog h2 {
   margin: 15px auto;
-  font-family: "pacifico";
-  color: yellow;
+  font-family: "roboto";
+  color: #E0C15B;
+  line-height: 1.2em;
+  font-size: 2.5em;
 }
 .container .blog p {
   width: 80%;
@@ -280,9 +366,10 @@ p {
 }
 .container .blog .link {
   margin: auto;
-  background-color: yellow;
+  background-color: #E0C15B;
   height: 50px;
-  width: auto;
+  width: 250px;
+  text-align: center;
 }
 .container .blog .link a {
   color: white;
@@ -300,7 +387,7 @@ p {
 }
 .container .speciality-hero h1 {
   font-family: "pacifico";
-  color: yellow;
+  color: #E0C15B;
   margin: 120px auto;
 }
 .container .speciality-hero .btn {
@@ -320,36 +407,106 @@ p {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  height: 50vh;
-  padding-top: 40px;
+  height: auto;
+  margin: 30px auto;
 }
 .container .content__text {
+  width: 80%;
+  padding-top: 40px;
+  text-align: left;
   flex: 1;
 }
-.container .content__text__content {
-  width: 80%;
-  margin: auto;
+.container .content__text .subtitle {
+  font-family: "roboto";
+  color: #E0C15B;
+  line-height: 1.2em;
+  font-size: 2.5em;
+  margin: 0px auto;
+  width: 70%;
 }
-.container .content__text__content h2 {
-  font-family: "pacifico";
-  color: yellow;
+.container .content__text .text {
+  width: 70%;
+  margin: auto;
 }
 .container .content__image {
   flex: 1;
-}
-.container .content__image__content {
-  margin: 40px auto;
+  text-align: center;
   flex-direction: row;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  flex-wrap: wrap;
+  height: auto;
+}
+.container .content__image__content {
+  margin: 40px auto;
+  display: flex;
   padding-top: 10px;
+  flex-wrap: wrap;
+  flex-direction: row;
 }
 .container .content__image__content .item {
-  flex: 0.5;
+  width: 270px;
+  height: 150px;
   height: 80px;
   border-radius: 30px;
   border: 2px black solid;
   text-align: center;
   margin: 15px;
+}
+.container .content__image img {
+  width: 550px;
+  height: 450px;
+  border-radius: 15px;
+  margin: 50px auto;
+}
+.container .price {
+  width: 100%;
+  display: block;
+  flex: 1;
+  text-align: center;
+}
+.container .price .title {
+  font-family: "pacifico";
+  color: #E0C15B;
+  margin: auto;
+}
+.container .price__list {
+  flex-direction: row;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: 40px auto;
+  text-align: center;
+}
+.container .price__list .price-card {
+  flex-direction: column;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  text-align: center;
+  width: 250px;
+}
+.container .price__list .price-card img {
+  width: 200px;
+  height: 200px;
+  border-radius: 15px;
+}
+.container .price__list .price-card h3 {
+  font-weight: bold;
+  margin: 60px auto 5px auto;
+}
+.container .price__list .price-card .amount {
+  margin: 0px auto;
+}
+.container .price__list .price-card .amount {
+  font-weight: 300;
+}
+.container .price .link {
+  background-color: #E0C15B;
+  height: 50px;
+  width: 250px;
+  text-align: center;
+  margin: auto;
 }/*# sourceMappingURL=main.css.map */

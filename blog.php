@@ -15,13 +15,13 @@
 
                 <span>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                     Harum dolorem possimus optio doloribus magnam repellendus 
+                     Harum dolorem possimus optio doloribus magnam repellendus
                      atque beatae sint? Quasi expedita vitae quaerat.
                 </span>
 
                 <p>
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio qui
-                     facere nesciunt corporis, quod harum quas natus enim quos quidem quia consequuntur 
+                     facere nesciunt corporis, quod harum quas natus enim quos quidem quia consequuntur
                     alias reprehenderit eos sint ad adipisci labore tempora!
                 </p>
             </div>
@@ -30,7 +30,7 @@
                 <div class="article">
                     <img src="" alt="">
                     <span>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit 
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
                         consequuntur dignissimos facere dolorem laudantium nisi pariatur
                     </span>
                 </div>
@@ -38,7 +38,7 @@
                 <div class="article">
                     <img src="" alt="">
                     <span>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit 
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
                         consequuntur dignissimos facere dolorem laudantium nisi pariatur
                     </span>
                 </div>
@@ -46,7 +46,7 @@
                 <div class="article">
                     <img src="" alt="">
                     <span>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit 
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
                         consequuntur dignissimos facere dolorem laudantium nisi pariatur
                     </span>
                 </div>
@@ -132,7 +132,7 @@
             <li><a href="">4</a></li>
             <li><a href="">5</a></li>
         </ul>
-    
+
          <?php include 'footer.php'; ?>
     </div>
 </body>

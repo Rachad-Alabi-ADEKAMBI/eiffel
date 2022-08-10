@@ -2,12 +2,12 @@
 <html lang="en">
 <head>
     <?php include 'meta.php'; ?>
-    
+
     <title>Nos specialites</title>
 </head>
 <body>
     <div class="container">
-        <?php include 'header.php;' ?>
+        <?php include 'header.php'; ?>
 
         <div class="hero speciality-hero">
             <h1>
@@ -16,7 +16,7 @@
 
             <p class="text">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Earum labore vitae deserunt nam assumenda sint sed repellendus! Eaque 
+                Earum labore vitae deserunt nam assumenda sint sed repellendus! Eaque
                 consequuntur aut error dicta! Vitae, rerum. Dignissimos possimus illum in doloribus sint.
             </p>
 
@@ -31,17 +31,17 @@
             <div class="content__text">
                 <div class="content__text__content">
                 <h2 class="subtitle">
-                    Des traitements adaptes 
+                    Des traitements adaptes
                 </h2>
 
                 <p class="text">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                    Mollitia, doloribus? Tenetur totam laboriosam cupiditate accusantium nam, maiores, animi 
-                    ratione iusto dolore illo dolor nihil ad ipsum aspernatur illum 
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Mollitia, doloribus? Tenetur totam laboriosam cupiditate accusantium nam, maiores, animi
+                    ratione iusto dolore illo dolor nihil ad ipsum aspernatur illum
                     exercitationem quos!
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                    Mollitia, doloribus? Tenetur totam laboriosam cupiditate accusantium nam, maiores, animi 
-                    ratione iusto dolore illo dolor nihil ad ipsum aspernatur illum 
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Mollitia, doloribus? Tenetur totam laboriosam cupiditate accusantium nam, maiores, animi
+                    ratione iusto dolore illo dolor nihil ad ipsum aspernatur illum
                     exercitationem quos!
                 </p>
                 </div>
@@ -70,42 +70,64 @@
 
         <div class="content">
             <div class="content__image">
-                <img src="" alt="">
+                <img src="public/images/pexels-elina-fairytale-3865530.jpg" alt="">
             </div>
 
             <div class="content__text">
-                <h2 class="title">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                <h2 class="subtitle">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                 </h2>
 
                <p class="text">
-               Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-                Voluptatem itaque porro sed vitae illum voluptas fuga ea. 
-                Omnis asperiores saepe dolore id sunt nobis ea placeat, nam voluptatem blanditiis deserunt!
-
+               orem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
                </p>
             </div>
         </div>
 
+
         <div class="content">
             <div class="content__image">
-                <img src="" alt="">
+                <img src="public/images/pexels-elina-fairytale-3865530.jpg" alt="">
             </div>
 
             <div class="content__text">
-                <h2 class="title">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                <h2 class="subtitle">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                 </h2>
 
                <p class="text">
-               Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-                <br>
-                <ul>
-                    <li> <i></i> fgsdfgdfgdfgdf</li>
-                    <li> <i></i> fgsdfgdfgdfgdf</li>
-                    <li> <i></i> fgsdfgdfgdfgdf</li>
-                </ul>
-               </p>
+                                                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+                                        sed diam nonumy eirmod tempor invidunt ut labore et
+                                        dolore magna aliquyam erat, sed diam voluptua
+                                <ul>
+                                    <li>
+                                        <i></i>
+                                        Lorem ipsum dolor sit amet, consetetu
+                                    </li>
+
+                                    <li>
+                                        <i>
+                                        Lorem ipsum dolor sit amet, consetetu
+                                        </i>
+                                    </li>
+
+                                    <li>
+                                        <i></i>
+                                        Lorem ipsum dolor sit amet, consetetu
+                                    </li>
+
+                                    <li>
+                                        <i></i>
+                                        Lorem ipsum dolor sit amet, consetetu
+                                    </li>
+
+                                    <li>
+                                        <i></i>
+                                        Lorem ipsum dolor sit amet, consetetu
+                                    </li>
+                                </ul>
+                    </p>
             </div>
         </div>
 
@@ -115,59 +137,52 @@
             </h2>
 
             <div class="price__list">
-                <div class="price">
-                    <div class="price__img">
-                        <img src="" alt="">
-                    </div>
+
+                <div class="price-card">
+                        <img src="public/images/pexels-elina-fairytale-3865530.jpg" alt="">
 
                     <h3>
                             Skinbooster
                         </h3>
 
-                        <p class="title">
-                            A partir de 200 eu
+                        <p class="amount">
+                            A partir de 200 €
                         </p>
                 </div>
 
-                <div class="price">
-                    <div class="price__img">
-                        <img src="" alt="">
-                    </div>
+                <div class="price-card">
+                        <img src="public/images/pexels-elina-fairytale-3865530.jpg" alt="">
 
                     <h3>
                             Skinbooster
                         </h3>
 
-                        <p class="title">
-                            A partir de 200 eu
+                        <p class="amount">
+                            A partir de 200 €
                         </p>
                 </div>
 
-                <div class="price">
-                    <div class="price__img">
-                        <img src="" alt="">
-                    </div>
+                <div class="price-card">
+                        <img src="public/images/pexels-elina-fairytale-3865530.jpg" alt="">
 
                     <h3>
                             Skinbooster
                         </h3>
 
-                        <p class="title">
-                            A partir de 200 eu
+                        <p class="amount">
+                            A partir de 200 €
                         </p>
                 </div>
 
-                <div class="price">
-                    <div class="price__img">
-                        <img src="" alt="">
-                    </div>
+                <div class="price-card">
+                        <img src="public/images/pexels-elina-fairytale-3865530.jpg" alt="">
 
                     <h3>
                             Skinbooster
                         </h3>
 
-                        <p class="title">
-                            A partir de 200 eu
+                        <p class="amount">
+                            A partir de 200 €
                         </p>
                 </div>
             </div>

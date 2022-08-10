@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
-$yellow: yellow;
+$yellow: #E0C15B;
 $black: black;
 $white: white;
+$grey-light: #E5E5E5;
 
 @mixin title ($color:$yellow) {
     font-family: 'pacifico';
@@ -10,8 +11,10 @@ $white: white;
 }
 
 @mixin subtitle(){
-    font-family: 'pacifico';
+    font-family: 'roboto';
     color: $yellow;
+    line-height: 1.2em;
+    font-size: 2.5em;
 }
 
 @mixin flex($flex-direction:row){
@@ -27,7 +30,7 @@ $white: white;
 }
 
 @mixin text{
-
+    text-align: justify;
 }
 
 @mixin content(){
@@ -37,7 +40,8 @@ $white: white;
 @mixin link {
     background-color: $yellow;
     height: 50px;
-    width: auto;
+    width: 250px;
+    text-align: center;
 }
 
 @mixin btn{
@@ -57,11 +61,12 @@ $white: white;
         background-repeat: no-repeat;
         background-size:contain;
         background-position: center;
-        
+
 }
 
 html, body{
     box-sizing: border-box;
+    line-height: 1.7em;
 }
 
 a{
@@ -77,15 +82,103 @@ p{
     @include content();
 }
 
+.link a{
+    color: white;
+}
+
 .container{
+    .header{
+        width: 100%;
+        display: block;
+        height: 250px;
+
+        &__top{
+            background-color: black;
+            height: 50px;
+            width: 100%;
+
+            .adress-top{
+                float: right;
+                color: $yellow;
+            }
+        }
+
+        &__main{
+            width: 100%;
+            background-color: white;
+            @include flex();
+
+
+
+            &__content{
+                width: 100%;
+                height: 110px;
+                @include flex();
+
+                .logo{
+                    img{
+                        width: 110px;
+                        height: 110px;
+                    }
+                }
+
+                .menu{
+                    margin: auto;
+                    width: 60%;
+                            li{
+                                display: inline;
+
+                                a{
+                                    color: black;
+                                }
+
+                                a:hover{
+                                    color: $yellow;
+                                }
+                            }
+                        }
+                    }
+
+                .adress{
+                    color: $black;
+                    margin: auto auto 20px auto;
+                }
+
+        }
+
+        &__bottom{
+            height: 80px;
+            background-color: $black;
+            text-align: center;
+
+            .treatments{
+                text-align: center;
+                margin: auto;
+                li{
+                    display: inline;
+                    a{
+                        color: $white;
+                    }
+
+                    a:hover{
+                        color: $yellow;
+                    }
+                }
+            }
+        }
+    }
+
     .hero{
         @include hero();
         background-image: url('public/images/pexels-samad-ismayilov-735552.jpg');
-     
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size:cover;
+
 
         &__links{
             margin: 15px auto;
-            
+
             li{
                 display: inline;
                 a{
@@ -156,11 +249,11 @@ p{
                 &__title{
                     @include title();
                 }
-    
+
                 p{
                     margin: auto;
                 }
-    
+
                 &__numbers{
                     @include flex();
                     @include content();
@@ -187,7 +280,7 @@ p{
             }
         }
 
-        .specialities{
+    .specialities{
             display: block;
             text-align: center;
 
@@ -212,7 +305,7 @@ p{
                         @include image;
                         width: 180px;
                         height: 200px;
-                       
+
                         img{
                             width: 100%;
                             height: 100%;
@@ -226,12 +319,12 @@ p{
                             right: 50%;
                             top: 50%;
                             bottom: 50%;
-                        
+
                         }
                     }
                 }
 
-            }
+    }
 
     .center{
         background-color: $black;
@@ -310,7 +403,7 @@ p{
         text-align: center;
         display: block;
         margin: auto;
-        
+
 
         h2{
             margin: 15px auto;
@@ -376,7 +469,7 @@ p{
        }
 
        p{
-        
+
        }
 
        .btn{
@@ -392,33 +485,53 @@ p{
     .content{
         width: 100%;
         @include flex;
-        height: 50vh;
-        padding-top: 40px;
+        height: auto;
+        margin: 30px auto;
+
 
         &__text{
-            
+            width: 80%;
+            padding-top: 40px;
+            text-align: left;
             flex: 1;
-           &__content{
-            @include content();
-            margin: auto;
 
-                h2{
-                    @include subtitle()
+                .subtitle{
+                    @include subtitle();
+                    margin: 0px auto;
+                    width: 70%;
+                }
+
+                .text{
+                    width: 70%;
+                    margin: auto;
+
+                    ul{
+                        li{
+
+                        }
+                    }
                 }
            }
-        }
 
         &__image{
             flex: 1;
+            text-align: center;
+            @include flex();
+            flex-wrap: wrap;
+            height: auto;
+
 
             &__content{
                 margin: 40px auto;
-                @include flex();
+                display: flex;
                 padding-top: 10px;
+                flex-wrap: wrap;
+                flex-direction: row;
 
-                
+
                 .item{
-                    flex: 0.5;
+                    width: 270px;
+                    height: 150px;
                     height: 80px;
                     border-radius: 30px;
                     border: 2px $black solid;
@@ -427,10 +540,69 @@ p{
                 }
             }
 
-            
+            img{
+                width: 550px;
+                height: 450px;
+                border-radius: 15px;
+                margin: 50px auto;
+            }
+
+
         }
     }
 
-    
+    .price{
+        width: 100%;
+        display: block;
+        flex: 1;
+        text-align: center;
 
+        .title{
+            @include title();
+            margin: auto;
+        }
+
+        &__list{
+            @include flex();
+            @include content();
+            margin: 40px auto;
+            text-align: center;
+
+            .price-card{
+                @include flex(column);
+                text-align: center;
+                width: 250px;
+
+                img{
+                    width: 200px;
+                    height: 200px;
+                    border-radius: 15px;
+                }
+
+                h3{
+                    font-weight: bold;
+                    margin: 60px auto 5px auto;
+                }
+
+                .amount{
+                    margin: 0px auto;
+                }
+
+                .amount{
+                    font-weight: 300;
+                }
+
+
+
+
+            }
+
+
+        }
+
+        .link{
+            @include link();
+            margin: auto;
+        }
+    }
 }
