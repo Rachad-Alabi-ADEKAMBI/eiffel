@@ -9,139 +9,162 @@
     <div class="container">
         <?php include 'header.php'; ?>
             <div class="avis">
-                <div class="avis__form">
-                    <p class="text">
-                        Votre avis compte
-                    </p>
+                <div class="avis__content">
+                    <div class="avis__content__form">
+                        <p class="text">
+                            Votre avis compte
+                        </p>
 
-                    <h1>
-                        Laisser un avis
-                    </h1>
+                        <h1>
+                            Laisser un avis
+                        </h1>
 
-                    <form action="" method=''>
-                      <div class="name">
+                        <form action="" method=''>
+                            <div class="name">
+                                    <label for="">
+                                        <input type="text" placeholder="Nom">
+                                    </label>
+
+                                    <label for="">
+                                        <input type="text" placeholder="Email">
+                                    </label>
+                            </div>
+
                             <label for="">
-                                <input type="text" placeholder="Nom">
-                            </label>
+                                <input type="text" class='message' placeholder="Votre message">
+                            </label> <br>
 
                             <label for="">
-                                <input type="text" placeholder="Email">
+                                <button>
+                                    Envoyer
+                                </button>
                             </label>
-                      </div>
-
-                      <label for="">
-                        <input type="text" class='message' placeholder="Votre message">
-                      </label>
-
-                        <label for="">
-                            <button>
-                                Envoyer
-                            </button>
-                        </label>
-                    </form>
+                        </form>
 
 
-                </div>
+                    </div>
 
-                <div class="avis__image">
-                    <div class="avis__image__white">
-                        <div class="avis-author">
-                            <img src="public/images/27de1f60e3c1a90a389aa6794cef999b.jpeg" alt="">
-                            <p class="name">
-                                Cassandra T.
-                            <br>
-                                ******
-                            </p>
+                    <div class="avis__content__image">
+                        <div class="white">
+                                <div class="avis-author">
+                                    <img src="public/images/27de1f60e3c1a90a389aa6794cef999b.jpeg" alt="">
+                                    <p class="name">
+                                        Cassandra T.
+                                    <br>
+                                        ******
+                                    </p>
+                                </div>
 
-                            <p>
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex voluptate
-                                 mollitia accusamus fugit incidunt odio est expedita deserunt,
-                                 quidem doloribus repellat possimus sapiente natus animi velit.
-                            </p>
+                                <p>
+                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+                                </p>
+
+                                <p class="date">
+                                    08 Juillet 2022
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="black">
+
                         </div>
                     </div>
-
-                    <div class="avis__image__black">
-                        <img src="public/images/pexels-samad-ismayilov-735552.jpg" alt="">
-                    </div>
                 </div>
+            <div class="avis-main">
+               <div class="avis-main__item">
+                    <div class="avis-author">
+                        <img src="public/images/27de1f60e3c1a90a389aa6794cef999b.jpeg" alt="">
+                        <p class="">
+                            Cassandra T. <br>
+                            <strong>
+                                ****
+                            </strong>
+                        </p>
+                    </div>
+
+                    <div class='avis-text'>
+
+                        <p>
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+                        sed diam nonumy eirmod tempor invidunt ut labore et
+                        dolore magna aliquyam erat, sed diam voluptua. At
+                        vero eos et accusam et justo duo dolores et ea rebum.
+                        Stet clita kasd gubergren,
+                        no sea takimata sanctus est Lorem ipsum dolor sit amet
+                        </p>
+
+                        <p class="text grey">
+                            08 JUillet 2022
+                        </p>
+                    </div>
+               </div>
+
+               <div class="avis-main__item">
+                    <div class="avis-author">
+                        <img src="public/images/27de1f60e3c1a90a389aa6794cef999b.jpeg" alt="">
+                        <p class="">
+                            Cassandra T. <br>
+                            <strong>
+                                ****
+                            </strong>
+                        </p>
+                    </div>
+
+                    <div class='avis-text'>
+
+                        <p>
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+                        sed diam nonumy eirmod tempor invidunt ut labore et
+                        dolore magna aliquyam erat, sed diam voluptua. At
+                        vero eos et accusam et justo duo dolores et ea rebum.
+                        Stet clita kasd gubergren,
+                        no sea takimata sanctus est Lorem ipsum dolor sit amet
+                        </p>
+
+                        <p class="text grey">
+                            08 JUillet 2022
+                        </p>
+                    </div>
+               </div>
+
+               <div class="avis-main__item">
+                    <div class="avis-author">
+                        <img src="public/images/27de1f60e3c1a90a389aa6794cef999b.jpeg" alt="">
+                        <p class="">
+                            Cassandra T. <br>
+                            <strong>
+                                ****
+                            </strong>
+                        </p>
+                    </div>
+
+                    <div class='avis-text'>
+
+                        <p>
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+                        sed diam nonumy eirmod tempor invidunt ut labore et
+                        dolore magna aliquyam erat, sed diam voluptua. At
+                        vero eos et accusam et justo duo dolores et ea rebum.
+                        Stet clita kasd gubergren,
+                        no sea takimata sanctus est Lorem ipsum dolor sit amet
+                        </p>
+
+                        <p class="text grey">
+                            08 JUillet 2022
+                        </p>
+                    </div>
+               </div>
+
+               <ul class="pagination">
+                    <li><a href="">1</a></li>
+                    <li><a href="">2</a></li>
+                    <li><a href="">3</a></li>
+                    <li><a href="">4</a></li>
+                    <li><a href="">5</a></li>
+                </ul>
             </div>
 
-            <div class="avis__main">
-               <div class="avis__main__item">
-                    <div class="avis-author">
-                        <img src="" alt="">
-                        <p class="">
-                            Cassandra T.
-                        </p>
-                    </div>
 
-                    <div class=''>
-
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Possimus soluta cupiditate nisi perferendis adipisci officia quidem obcaecati
-                            quasi ea recusandae maxime odit, itaque similique mollitia est provident. Doloribus, sint tenetur.
-                        </p>
-
-                        <p class="text grey">
-                            08 JUillet 2022
-                        </p>
-                    </div>
-               </div>
-
-               <div class="avis__main__item">
-                    <div class="avis-author">
-                        <img src="" alt="">
-                        <p class="">
-                            Cassandra T.
-                        </p>
-                    </div>
-
-                    <div class=''>
-
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Possimus soluta cupiditate nisi perferendis adipisci officia quidem obcaecati
-                            quasi ea recusandae maxime odit, itaque similique mollitia est provident. Doloribus, sint tenetur.
-                        </p>
-
-                        <p class="text grey">
-                            08 JUillet 2022
-                        </p>
-                    </div>
-               </div>
-
-               <div class="avis__main__item">
-                    <div class="avis-author">
-                        <img src="" alt="">
-                        <p class="">
-                            Cassandra T.
-                        </p>
-                    </div>
-
-                    <div class=''>
-
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Possimus soluta cupiditate nisi perferendis adipisci officia quidem obcaecati
-                            quasi ea recusandae maxime odit, itaque similique mollitia est provident. Doloribus, sint tenetur.
-                        </p>
-
-                        <p class="text grey">
-                            08 JUillet 2022
-                        </p>
-                    </div>
-               </div>
-            </div>
-
-            <ul class="pagination">
-                <li><a href="">1</a></li>
-                <li><a href="">2</a></li>
-                <li><a href="">3</a></li>
-                <li><a href="">4</a></li>
-                <li><a href="">5</a></li>
-            </ul>
         <?php include 'footer.php'; ?>
     </div>
 

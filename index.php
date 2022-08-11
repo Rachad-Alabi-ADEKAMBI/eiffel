@@ -68,40 +68,34 @@
     <div class="about">
         <div class="about__infos">
             <div class="about__infos__content">
-                <h2 class="about__infos__title">
-                    Notre institut en quelques
+                <h2 class="subtitle">
+                    Notre institut en quelques chiffres
                 </h2>
 
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Accusantium, repellat, porro doloremque fugit odio eius blanditiis saepe impedit
-                    facilis laborum aut laudantium ipsam magnam vel atque obcaecati veniam ex. Optio.
-                    lorem. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Accusantium, repellat, porro doloremque fugit odio eius blanditiis saepe impedit
-                    facilis laborum aut laudantium ipsam magnam vel atque obcaecati veniam ex. Optio.
-                    lorem
+                <p class='text'>
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit.
                 </p>
 
-                <div class="about__infos__numbers">
+                <div class="numbers">
                     <div class="number">
-                        <div class="span">
+                        <span>
                             +99
-                        </div> <br>
-                        lorem
+                        </span> <br>
+                        lorem ipsum
                     </div>
 
                     <div class="number">
-                        <div class="span">
+                        <span>
                             +99
-                        </div> <br>
-                        lorem
+                        </span> <br>
+                        lorem ipsum
                     </div>
 
                     <div class="number">
-                        <div class="span">
+                        <span>
                             +99
-                        </div> <br>
-                        lorem
+                        </span> <br>
+                        lorem ipsum
                     </div>
                 </div>
             </div>
@@ -114,7 +108,7 @@
 
     <div class="specialities">
         <h2 class='title'>
-            NOS SPECIALITS
+            NOS SPECIALITES
         </h2>
 
         <p class="text">
