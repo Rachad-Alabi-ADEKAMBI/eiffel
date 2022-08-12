@@ -166,7 +166,7 @@
     </div>
 
     <div class="center">
-        <h2 class="title">
+        <h2 class="subtitle">
             NOTRE CENTRE ET NOS EQUIPES
         </h2>
 
@@ -198,83 +198,94 @@
             LES TEMOIGNAGES
         </h2>
 
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing
-             elit. Omnis blanditiis aut velit perferendis
-             dolorem tenetur est quod veniam dicta magnam.
+        <p class="text">
+        Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+         sed diam nonumy eirmod tempor invidunt ut labore et
+          dolore magna aliquyam erat, sed diam voluptua.
         </p>
 
         <div class="testimonies__list">
 
             <div class="testimony">
                     <div class="testimony__top">
-                        <img src="" alt="">
-                        <span>author</span>
-                        <div class="stars">
-                            ****
-                        </div>
+                        <img src="public/images/27de1f60e3c1a90a389aa6794cef999b.jpeg" alt="">
+
+                        <p>
+                            Cassandra <br>
+                            <span>****</span>
+                        </p>
                     </div>
 
                     <p class="testimony__text">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing
-                        elit. Dolorem quos asperiores rerum quibusdam
-                         temporibus. Laborum, eius maiores.
-                    </p>
+                    Lorem ipsum dolor sit amet, consetetur
+                     sadipscing elitr, sed diam nonumy
+                     eirmod tempor invidunt ut labore et
+                     dolore magna aliquyam erat, sed diam
+                     voluptua. At vero eos et accusam.
+                  </p>
             </div>
 
             <div class="testimony">
                     <div class="testimony__top">
-                        <img src="" alt="">
-                        <span>author</span>
-                        <div class="stars">
-                            ****
-                        </div>
+                        <img src="public/images/27de1f60e3c1a90a389aa6794cef999b.jpeg" alt="">
+
+                        <p>
+                            Cassandra <br>
+                            <span>****</span>
+                        </p>
                     </div>
 
                     <p class="testimony__text">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing
-                        elit. Dolorem quos asperiores rerum quibusdam
-                         temporibus. Laborum, eius maiores.
-                    </p>
-            </div>
-
-
-            <div class="testimony">
-                    <div class="testimony__top">
-                        <img src="" alt="">
-                        <span>author</span>
-                        <div class="stars">
-                            ****
-                        </div>
-                    </div>
-
-                    <p class="testimony__text">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing
-                        elit. Dolorem quos asperiores rerum quibusdam
-                         temporibus. Laborum, eius maiores.
-                    </p>
+                    Lorem ipsum dolor sit amet, consetetur
+                     sadipscing elitr, sed diam nonumy
+                     eirmod tempor invidunt ut labore et
+                     dolore magna aliquyam erat, sed diam
+                     voluptua. At vero eos et accusam.
+                  </p>
             </div>
 
             <div class="testimony">
                     <div class="testimony__top">
-                        <img src="" alt="">
-                        <span>author</span>
-                        <div class="stars">
-                            ****
-                        </div>
+                        <img src="public/images/27de1f60e3c1a90a389aa6794cef999b.jpeg" alt="">
+
+                        <p>
+                            Cassandra <br>
+                            <span>****</span>
+                        </p>
                     </div>
 
                     <p class="testimony__text">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing
-                        elit. Dolorem quos asperiores rerum quibusdam
-                         temporibus. Laborum, eius maiores.
-                    </p>
+                    Lorem ipsum dolor sit amet, consetetur
+                     sadipscing elitr, sed diam nonumy
+                     eirmod tempor invidunt ut labore et
+                     dolore magna aliquyam erat, sed diam
+                     voluptua. At vero eos et accusam.
+                  </p>
+            </div>
+
+            <div class="testimony">
+                    <div class="testimony__top">
+                        <img src="public/images/27de1f60e3c1a90a389aa6794cef999b.jpeg" alt="">
+
+                        <p>
+                            Cassandra <br>
+                            <span>****</span>
+                        </p>
+                    </div>
+
+                    <p class="testimony__text">
+                    Lorem ipsum dolor sit amet, consetetur
+                     sadipscing elitr, sed diam nonumy
+                     eirmod tempor invidunt ut labore et
+                     dolore magna aliquyam erat, sed diam
+                     voluptua. At vero eos et accusam.
+                  </p>
             </div>
         </div>
     </div>
 
     <div class="blog">
-        <h2 class="tsubtitle">
+        <h2 class="subtitle">
             NOTRE BLOG
         </h2>
 
@@ -288,47 +299,7 @@
         <div class="cards">
             <div class="cards__card">
                     <img src="public/images/0ca6f3c43d3ca79a66945c464b16017c.jpeg" alt="">
-                    <div class="card__info">
-                        <h4>
-                            lorem
-                        </h4>
-
-                        <p class="text">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Minus officiis enim architecto, sapiente eveniet nemo commodi
-                        </p>
-
-                        <div class="time">
-                            <i></i>
-                            4 mois
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="cards__card">
-                    <img src="public/images/0ca6f3c43d3ca79a66945c464b16017c.jpeg" alt="">
-                    <div class="card__info">
-                        <h4>
-                            lorem
-                        </h4>
-
-                        <p class="text">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Minus officiis enim architecto, sapiente eveniet nemo commodi
-                        </p>
-
-                        <div class="time">
-                            <i></i>
-                            4 mois
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="cards__card">
-                    <img src="public/images/0ca6f3c43d3ca79a66945c464b16017c.jpeg" alt="">
-                    <div class="card__info">
+                    <div class="cards__card__info">
                         <h4>
                             lorem
                         </h4>

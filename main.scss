@@ -1,17 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('http://fonts.cdnfonts.com/css/vogue');
+@import url('http://fonts.cdnfonts.com/css/montserrat');
 
 $yellow: #E0C15B;
 $black: black;
 $white: white;
 $grey-light: #E5E5E5;
+$bg: #FBFBFB;
+$black-dark: #1f2022;
+$black-text: #3c3e3e;
 
 @mixin title ($color:$yellow) {
-    font-family: 'pacifico';
+    font-family: 'Vogue', sans-serif;
+    filter: drop-shadow(0 0 28.5px #e0c15b);
     color: $color;
 }
 
 @mixin subtitle(){
-    font-family: 'roboto';
+    font-family: 'Poppins', sans-serif;
     color: $yellow;
     line-height: 1.2em;
     font-size: 2.5em;
@@ -30,18 +36,34 @@ $grey-light: #E5E5E5;
 }
 
 @mixin text{
-    text-align: justify;
+    text-align: center;
+    font-family: 'Libre Baskerville', sans-serif;
 }
 
 @mixin content(){
     width: 80%;
+    margin: auto;
 }
 
 @mixin link {
     background-color: $yellow;
+    border: 1px $yellow solid;
     height: 50px;
     width: 250px;
     text-align: center;
+}
+
+@mixin input{
+    border-radius: 5px;
+    background-color: $white;
+    padding-left: 20px;
+    height: 40px;
+}
+
+@mixin message{
+    width: 300px;
+    height: 250px;
+    background-color: white;
 }
 
 @mixin btn{
@@ -53,20 +75,25 @@ $grey-light: #E5E5E5;
 }
 
 @mixin hero{
-    height: 80vh;
+    height: 500px;
          width: 100%;
         position: relative;
         text-align: center;
         padding-top: 20px;
         background-repeat: no-repeat;
-        background-size:contain;
+        background-repeat: no-repeat;
         background-position: center;
+        background-size:cover;
+        margin: 0;
+
 
 }
 
 html, body{
     box-sizing: border-box;
     line-height: 1.7em;
+    font-family: 'Libre Baskerville', sans-serif;
+    color: $black-text;
 }
 
 a{
@@ -87,10 +114,12 @@ p{
 }
 
 .container{
+    display: block;
     .header{
         width: 100%;
         display: block;
-        height: 250px;
+        height: auto;
+        margin: 0;
 
         &__top{
             background-color: black;
@@ -100,6 +129,7 @@ p{
             .adress-top{
                 float: right;
                 color: $yellow;
+                margin: auto 10px auto auto;
             }
         }
 
@@ -108,28 +138,31 @@ p{
             background-color: white;
             @include flex();
 
-
-
             &__content{
                 width: 100%;
-                height: 110px;
+                height: 90px;
                 @include flex();
+                @include content();
+                text-align: center;
 
                 .logo{
                     img{
-                        width: 110px;
-                        height: 110px;
+                        width: 80px;
+                        height: 80px;
+                        margin: auto;
                     }
                 }
 
                 .menu{
-                    margin: auto;
+                    margin: auto 0;
                     width: 60%;
                             li{
                                 display: inline;
+                                margin: 20px;
 
                                 a{
                                     color: black;
+                                    font-weight: bold;
                                 }
 
                                 a:hover{
@@ -147,8 +180,8 @@ p{
         }
 
         &__bottom{
-            height: 80px;
-            background-color: $black;
+            height: 30px;
+            background-color: $black-dark;
             text-align: center;
 
             .treatments{
@@ -170,11 +203,8 @@ p{
 
     .hero{
         @include hero();
+        margin: 0;
         background-image: url('public/images/pexels-samad-ismayilov-735552.jpg');
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size:cover;
-
 
         &__links{
             margin: 15px auto;
@@ -207,6 +237,7 @@ p{
 
             p{
                 margin: 15px auto;
+                color: $white;
             }
 
             .line{
@@ -232,7 +263,8 @@ p{
         width: 100%;
         flex-direction: row;
         height: 80vh;
-        margin: 20px auto;
+        margin: 20px auto auto 0;
+        text-align: center;
 
         &__infos{
             flex: 1;
@@ -241,44 +273,59 @@ p{
             margin: auto;
             text-align: left;
             padding-top: 0;
-            height: 400px;
 
-            &__content{
-                @include content();
-                margin: auto;
-                &__title{
-                    @include title();
-                }
-
-                p{
-                    margin: auto;
-                }
-
-                &__numbers{
-                    @include flex();
+                &__content{
                     @include content();
-                    margin: 15px auto;
+                    margin: 0 auto;
+
+                    .subtitle{
+                        @include subtitle();
+                        margin: 0px auto;
+                    }
+
+                    p{
+                        margin: auto;
+                        font-family: 'Poppins', sans-serif;
+                    }
+
+                    .numbers{
+                        @include flex();
+                        margin: 40px auto auto 0;
+
+
+                        .number{
+                            display: block;
+                            font-family: 'Poppins';
+                            font-weight: bold;
+
+                            span{
+                                font-family: 'montserrat';
+                                font-size: 2.3em;
+                                color: $yellow;
+                                font-weight: 800;
+                            }
+
+
+                        }
+                    }
                 }
             }
-        }
 
-        &__image{
-            flex: 1;
-            width: 400px;
-            height: 400px;
-            @include content();
-            margin: 20px auto;
-            background-color: red;
+            &__image{
+                flex: 1;
+                @include content();
+                margin: 20px auto;
+                text-align: left;
 
 
-            img{
-                width: 350px;
-                @include image();
-                height: 350px;
-                margin: auto;
+                img{
+                    width: 460px;
+                    @include image();
+                    height: 430px;
+                    margin: auto 0;
+                }
+                }
             }
-            }
-        }
 
     .specialities{
             display: block;
@@ -291,20 +338,21 @@ p{
             p{
                 margin: 15px auto;
                 @include content();
+                font-family: 'Libre Baskerville', sans-serif;
+
             }
 
             &__list{
                 @include flex();
                 @include content();
-                margin: auto;
+                margin: 40px auto;
 
                     .speciality{
                         position: relative;
-                        flex: 1;
                         margin: 15px;
                         @include image;
-                        width: 180px;
-                        height: 200px;
+                        width: 250px;
+                        height: 220px;
 
                         img{
                             width: 100%;
@@ -313,12 +361,10 @@ p{
                         }
 
                         h3{
-                            position: absolute;
+                            margin: -120px auto;
                             text-align: center;
-                            left: 50%;
-                            right: 50%;
-                            top: 50%;
-                            bottom: 50%;
+                            color: $white;
+                            font-family: 'Vogue', sans-serif;
 
                         }
                     }
@@ -328,25 +374,29 @@ p{
 
     .center{
         background-color: $black;
-        height: 400px;
+        height: 500px;
         text-align: center;
-        padding-top: 20px;
+        padding-top: 40px;
 
         h2{
             @include subtitle();
             margin: 5px auto;
+            filter: drop-shadow(0 0 28.5px #e0c15b);
+            font-family: 'Vogue', 'sans-serif';
         }
 
-        p{
-            margin: 20px auto;
-            color: $white;
+        .text{
+
             @include content();
+            margin: 50px auto;
+            color: $white;
+            font-family: 'libre Baskerville', sans-serif;
         }
 
         .slider{
             @include content();
             @include flex();
-            margin: auto;
+            margin: 6px auto;
 
             &__images{
                 @include content();
@@ -357,7 +407,7 @@ p{
                     @include image();
                     width: 200px;
                     height: 200px;
-                    margin: 15px ;
+                    margin: 0px ;
                 }
             }
         }
@@ -366,33 +416,64 @@ p{
     .testimonies{
         display: block;
         text-align: center;
+        height: auto;
 
         h2{
-            margin: 15px auto;
+            margin: 40px auto;
             @include subtitle();
+            font-family: 'Vogue', sans-serif;
         }
 
-        p{
+        .text{
            @include content();
-           margin: auto
+           @include text();
+           margin: 40px auto;
         }
 
         &__list{
-            @include content();
             @include flex();
-            margin: 20px auto;
+            margin: 80px auto;
+            height: 400px;
+            background-color: $bg;
+            justify-content: space-around;
 
             .testimony{
                 flex: 1;
                 display: block;
+                margin: 20px;
+                width: 200px;
+                padding: 15px;
+                height: auto;
+                @include image();
+                background-color: $white;
                 text-align: left;
 
                 &__top{
-                    display: grid;
+                    @include flex();
+                    text-align: left;
+                    img{
+                        width: 50px;
+                        height: 50px;
+                        border-radius: 30px;
+                        margin: auto 0 auto 0;
+                    }
+
+                    p{
+                        color: $black-text;
+                        font-weight: bold;
+                        text-align: left;
+
+                        span{
+                            color: $yellow;
+                            font-weight: bold;
+                        }
+                    }
                 }
 
                 &__text{
-                    margin: 15px auto;
+                    margin: 50px auto auto 0;
+                    text-align: left;
+                    width: 100%;
                 }
             }
         }
@@ -403,38 +484,50 @@ p{
         text-align: center;
         display: block;
         margin: auto;
+        height: auto;
 
 
-        h2{
-            margin: 15px auto;
+        .subtitle{
             @include subtitle();
-        }
+            margin: 0 auto;
+            }
 
-        p{
+        .text{
+            @include text();
             @include content();
-            margin: auto
+            margin: 40px auto
         }
 
         .cards{
             @include content();
             @include flex;
-            background-color: red;
             margin: auto;
+            height: 500px;
 
             &__card{
-                flex: 1;
                 margin: 15px;
-                height: 300px;
+                height:  350px;
+                width:  270px;
+                display: block;
+                @include image();
+                position: relative;
+
+                img{
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    @include image();
+                }
 
                 &__info{
-                    background-color: black;
-                    top: 180px;
+                    background-color: $black-text;
                     text-align: left;
-
-                    img{
-                        width: 100%;
-                        height: 100%;
-                    }
+                    position: absolute;
+                    width: 100%;
+                    height: 35%;
+                    top:30%;
 
                     h4{
                         font-weight: bold;
@@ -462,22 +555,35 @@ p{
     .speciality-hero{
        @include hero();
        background: url('public/images/epilation-laser-centre-du-champs-de-mars-1536x1171.jpg');
+        background-size:cover;
+        background-repeat: no-repeat;
+
 
        h1{
         @include title();
-        margin: 120px auto;
+        margin: 150px auto 50px auto;
+        color: $white;
        }
 
-       p{
-
+       .text{
+            color: $white;
+            @include text();
+            width: 50%;
        }
 
        .btn{
             @include btn();
             margin: 30px auto;
+            border: 3px solid $white;
+            display: table;
+            width: 200px;
 
             a{
                 color: white;
+                font-weight: bold;
+                font-family: 'Poppins';
+                vertical-align: middle;
+                margin: auto;
             }
        }
     }
@@ -497,16 +603,22 @@ p{
 
                 .subtitle{
                     @include subtitle();
-                    margin: 0px auto;
+                    margin: 0px auto 20px auto;
                     width: 70%;
                 }
 
                 .text{
                     width: 70%;
-                    margin: auto;
+                    @include text();
+                    margin: 40px auto;
+                    text-align: left;
 
                     ul{
+                        text-align: left;
+                        margin: 40px auto;
+                        width: 70%;
                         li{
+                            margin: 40px auto;
 
                         }
                     }
@@ -526,17 +638,38 @@ p{
                 display: flex;
                 padding-top: 10px;
                 flex-wrap: wrap;
+                height: 250px;
                 flex-direction: row;
+                justify-content: baseline;
 
 
                 .item{
-                    width: 270px;
+                    width: 250px;
                     height: 150px;
                     height: 80px;
                     border-radius: 30px;
-                    border: 2px $black solid;
+                    border: 5px $black-text solid;
                     text-align: center;
-                    margin: 15px ;
+                    margin: 5px;
+                    display: table;
+
+                        img{
+                            width: 40px;
+                            height: 40px;
+                            display: table-cell;
+                            vertical-align: middle;
+                            margin: 15px 0 auto auto;
+                        }
+
+                        span{
+                            margin: 30px auto auto 0;
+                            font-weight: bold;
+                            display: table-cell;
+                            vertical-align: middle;
+                            font-family: 'Poppins', sans-serif;;
+                        }
+
+
                 }
             }
 
@@ -605,4 +738,370 @@ p{
             margin: auto;
         }
     }
+
+    .blog-hero{
+        @include hero();
+        background-image: url(public/images/pexels-samad-ismayilov-735552.jpg);
+        @include flex();
+
+        &__image{
+            flex: 1;
+            display: block;
+            text-align: center;
+            padding-top: 30px;
+
+            img{
+                @include content();
+                margin: auto;
+                @include image();
+                height: 200px;
+                width: 90%;
+            }
+
+            span{
+                width: 70%;
+                color: $white;
+                margin: 30px auto;
+                font-weight: 700;
+                font-size: bold;
+                text-align: left;
+            }
+
+            p{
+                margin: 50px auto;
+                width: 90%;
+                color: $white;
+            }
+        }
+
+        &__articles{
+            flex: 1;
+            @include flex(column);
+
+            .article{
+                margin: 30px auto;
+                @include flex();
+                width: auto;
+
+                img{
+                    width: 180px;
+                    height: 110px;
+                    @include image;
+                }
+
+                span{
+                    @include text();
+                    margin: auto 40px;
+                    font-weight: bold;
+                    width: 60%;
+                    color: $white;
+
+                }
+            }
+        }
+    }
+
+    .articles{
+        display: block;
+        padding-top: 40px;
+
+        h2{
+            color: $grey-light;
+            text-align: left;
+
+        }
+
+        &__content{
+            @include content();
+            @include flex();
+            margin: 30px auto;
+            .article{
+                @include flex(column);
+                text-align: left;
+                width: 250px;
+                margin: auto;
+
+                img{
+                    width: 210px;
+                    height: 120px;
+                    @include image();
+                }
+
+                .date{
+                    color: $yellow;
+                    margin: 15px auto auto 0;               }
+
+                .article__title{
+                    @include text();
+                    font-size: 1.5em;
+                }
+
+                p{
+                    @include text();
+                    margin: 40px auto;
+                }
+            }
+        }
+    }
+
+    .pagination{
+        text-align: center;
+        margin: auto;
+        @include content();
+
+        li{
+            display: inline;;
+            a{
+                color: $black;
+            }
+
+            a:hover{
+                color: $yellow;
+            }
+        }
+    }
+
+    .avis{
+        @include flex();
+        width: 100%;
+
+        &__content{
+            @include content();
+            @include flex();
+
+            &__form{
+                display: block;
+                flex: 1;
+                width: 80%;
+
+                p{
+                    margin: 40px auto 5px auto;
+                }
+
+                h1{
+                    margin: 15px auto;
+                }
+
+                form{
+                    display: block;
+
+                    .name{
+                        @include flex();
+
+                        label{
+                            flex: 1;
+
+                            input{
+                                width: 90%;
+                                border-radius: 5px;
+                                border: 2px solid $grey-light;
+                            }
+
+                        .message{
+                            border: 2px solid $grey-light;
+                           border: 5px;
+                           width: 90%;
+                           height: 250px;
+                        }
+
+                        button{
+                            margin: auto 0 auto auto;
+                        }
+                    }
+                }
+            }
+
+            }
+
+            &__image{
+                position: relative;
+                @include content();
+                @include flex();
+                width: 80%;
+                flex: 1;
+
+                .white{
+                    height: 300px;
+                    width: 450px;
+                    @include flex(column);
+                    margin: 80px auto 5px auto;
+                    z-index: 99999;
+                    background-color: whitesmoke;
+                    text-align: left;
+                    padding-top: 30px;
+                    padding-left: 20px;
+
+                    .avis-author{
+                        @include flex();
+
+                        img{
+                            width: 60px;
+                            height: 60px;
+                            border-radius: 30px;
+                        }
+                    }
+
+                    p{
+                        width: 60%;
+                        text-align: left;
+                        margin: 10px auto auto 10px;
+                    }
+
+                    .date{
+                        margin: 10px auto;
+                    }
+                }
+
+                .black{
+                    width: 400px;
+                    height: 400px;
+                    @include image();
+                    top: 0;
+                    right: 0;
+                    background-color: black;
+                     }
+            }
+        }
+    }
+
+    .avis-main{
+        width: 100%;
+        display: block;
+        height: auto;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        background-color: $grey-light;
+
+        &__item{
+            @include content();
+            height: 200px;
+            @include image();
+            @include flex();
+            background-color: $white;
+            margin: 80px auto;
+
+            .avis-author{
+                display: flex;
+                flex-direction: row;
+                justify-content: baseline;
+                width: 35%;
+                text-align: left;
+                padding-top: 0;
+
+
+                img{
+                    border-radius: 50px;
+                    height: 60px;
+                    width: 60px;
+                    margin: 50px 0 auto 80px;
+                }
+
+                p{
+                    font-weight: bold;
+                    margin: 50px auto auto 50px;
+
+                    strong{
+                        color: $yellow;
+                    }
+                }
+
+                .grey{
+                    color: grey;
+                    font-weight: bold;
+                    @include text();
+                }
+            }
+
+            .avis-text{
+                width: 65%;
+                @include flex(column);
+                display: flex;
+                flex-direction: column;
+                justify-content: baseline;
+            }
+
+            p{
+                @include text();
+                width: 90%;
+                margin: 15px auto;
+               }
+
+            .grey{
+                color: $grey-light;
+            }
+        }
+    }
+
+    .contact{
+        @include content();
+        @include flex();
+        background-color: $grey-light;
+        @include image();
+        text-align: center;
+        padding-top: 0;
+        height: 80vh;
+
+        &__image{
+            flex: 1;
+            display: block;
+            @include content();
+            background-color: red;;
+
+            img{
+                @include image();
+                @include content();
+                text-align: left;
+                width: 350px;
+                height: 110px;
+            }
+
+            .text{
+                font-weight: bold;
+                @include content();
+
+            }
+
+        }
+
+        &__form{
+            flex: 1;
+            @include flex(column);
+            @include content();
+            text-align: left;
+
+            .subtitle{
+                @include subtitle();
+            }
+
+            .name{
+                @include flex();
+
+                label{
+                    flex: 1;
+
+                    input{
+                        @include input();
+                    }
+                    .message{
+                        @include message();
+                        width: 300px;
+                        height: 250px;
+                    }
+                }
+
+                button{
+                    width: 150px;
+                    border: 1px solid $yellow;
+                    height: 50px;
+                    background-color: $yellow;
+                }
+            }
+
+            label{
+
+            }
+        }
+    }
+
+
 }

@@ -15,9 +15,8 @@
             </h1>
 
             <p class="text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Earum labore vitae deserunt nam assumenda sint sed repellendus! Eaque
-                consequuntur aut error dicta! Vitae, rerum. Dignissimos possimus illum in doloribus sint.
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+            labore et dolore magna aliquyam erat, sed.
             </p>
 
             <div class="btn">
@@ -50,18 +49,18 @@
             <div class="content__image">
                 <div class="content__image__content">
                 <div class="item">
-                    i
+                    <img src="public/pictos/skincare.svg" alt="">
                     <span>Hydrafacial</span>
                 </div>
 
                 <div class="item">
-                    i
-                    <span>Hydrafacial</span>
+                    <img src="public/pictos/organ-nose.svg" alt="">
+                    <span>Mesotherapie</span>
                 </div>
 
                 <div class="item">
-                    i
-                    <span>Hydrafacial</span>
+                    <img src="public/pictos/hair-root-skin.svg" alt="">
+                    <span>Peeling</span>
                 </div>
                 </div>
 
@@ -79,19 +78,12 @@
                 </h2>
 
                <p class="text">
-               orem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
-               </p>
-            </div>
+               Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem</div>
         </div>
 
 
         <div class="content">
-            <div class="content__image">
-                <img src="public/images/pexels-elina-fairytale-3865530.jpg" alt="">
-            </div>
-
-            <div class="content__text">
+        <div class="content__text">
                 <h2 class="subtitle">
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                 </h2>
@@ -129,6 +121,11 @@
                                 </ul>
                     </p>
             </div>
+
+            <div class="content__image">
+                <img src="public/images/pexels-elina-fairytale-3865530.jpg" alt="">
+            </div>
+
         </div>
 
         <div class="price">
