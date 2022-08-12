@@ -36,9 +36,21 @@
                 </ul>
 
                 <div class="adress">
-                    <div class="item">
-                        Paris 11
+                    <div class="adress-box">
+                        Paris 11 <br>
+                        <i class="fa-solid fa-calendar"></i> 01 36 78 94 25 <br>
+                        <a href="">Prendre Rdv</a>
+
                     </div>
+
+                    <div class="adress-box">
+                        Paris 11 <br>
+                        <i class="fa-solid fa-calendar"></i> 01 36 78 94 25 <br>
+                        <a href="">Prendre Rdv</a>
+
+                    </div>
+
+
                 </div>
            </div>
     </div>

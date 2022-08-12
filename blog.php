@@ -13,17 +13,14 @@
             <div class="blog-hero__image">
                 <img src="public/images/epilation-laser-centre-du-champs-de-mars-1536x1171.jpg" alt="" class="blog-hero__image__img">
 
-                <span>
+                <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                      Harum dolorem possimus optio doloribus magnam repellendus
                      atque beatae sint? Quasi expedita vitae quaerat.
-                </span> <br>
-
-                <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio qui
-                     facere nesciunt corporis, quod harum quas natus enim quos quidem quia consequuntur
-                    alias reprehenderit eos sint ad adipisci labore tempora!
-                </p>
+                        <br> <br><span>
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat
+                        </span>
+                    </p> <br>
             </div>
 
             <div class="blog-hero__articles">

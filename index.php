@@ -314,7 +314,44 @@
                             4 mois
                         </div>
                     </div>
-                </div>
+            </div>
+
+            <div class="cards__card">
+                    <img src="public/images/0ca6f3c43d3ca79a66945c464b16017c.jpeg" alt="">
+                    <div class="cards__card__info">
+                        <h4>
+                            lorem
+                        </h4>
+
+                        <p class="text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Minus officiis enim architecto, sapiente eveniet nemo commodi
+                        </p>
+
+                        <div class="time">
+                            <i></i>
+                            4 mois
+                        </div>
+                    </div>
+            </div>
+
+            <div class="cards__card">
+                    <img src="public/images/0ca6f3c43d3ca79a66945c464b16017c.jpeg" alt="">
+                    <div class="cards__card__info">
+                        <h4>
+                            lorem
+                        </h4>
+
+                        <p class="text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Minus officiis enim architecto, sapiente eveniet nemo commodi
+                        </p>
+
+                        <div class="time">
+                            <i></i>
+                            4 mois
+                        </div>
+                    </div>
             </div>
         </div>
 
@@ -325,7 +362,61 @@
        </div>
     </div>
 
-    <?php include 'footer.php'; ?>
+    <footer class="footer">
+        <div class="footer__content">
+            <div class="logo">
+                <img src="public/images/logo.png" alt="">
+            </div>
+
+            <ul class='menu'>
+                <li>
+                    <a href="">Notre centre</a>
+                </li>
+
+                <li>
+                    <a href="">
+                        Nos specialites
+                    </a>
+                </li>
+
+                <li>
+                    <a href="">
+                        Blog
+                    </a>
+                </li>
+
+                <li>
+                    <a href="">
+                        AVis
+                    </a>
+                </li>
+
+                <li>
+                    <a href="">
+                        Contact
+                    </a>
+                </li>
+            </ul>
+
+            <div class="adress">
+                <div class="adress-box">
+                    Paris 11 <br>
+                    <i></i>0136677br !
+                    <a href="">
+                        Prendre rdv
+                    </a>
+                </div>
+
+                <div class="adress-box">
+                    Paris 11 <br>
+                    <i></i>0136677br !
+                    <a href="">
+                        Prendre rdv
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
 
    </div>
 </body>

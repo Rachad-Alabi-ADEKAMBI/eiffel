@@ -115,11 +115,12 @@ p{
 
 .container{
     display: block;
+}
     .header{
         width: 100%;
         display: block;
         height: auto;
-        margin: 0;
+        margin: 0 auto;
 
         &__top{
             background-color: black;
@@ -139,13 +140,14 @@ p{
             @include flex();
 
             &__content{
-                width: 100%;
                 height: 90px;
                 @include flex();
                 @include content();
                 text-align: center;
+                margin: auto;
 
                 .logo{
+                    margin: auto 0 auto 10px;
                     img{
                         width: 80px;
                         height: 80px;
@@ -154,7 +156,7 @@ p{
                 }
 
                 .menu{
-                    margin: auto 0;
+                    margin: auto 0 auto 0;
                     width: 60%;
                             li{
                                 display: inline;
@@ -169,12 +171,24 @@ p{
                                     color: $yellow;
                                 }
                             }
-                        }
+                      }
                     }
 
                 .adress{
                     color: $black;
-                    margin: auto auto 20px auto;
+                    margin: auto 0 20px 0;
+                    @include flex();
+                    float: right;
+
+                    .adress-box{
+                        flex: 1;
+                        font-weight: bold;
+                        margin-left: 15px;
+
+                        a{
+                            color: $black;
+                        }
+                    }
                 }
 
         }
@@ -260,23 +274,22 @@ p{
 
     .about{
         @include flex($flex-direction:row);
-        width: 100%;
+        width: 80%;
         flex-direction: row;
         height: 80vh;
-        margin: 20px auto auto 0;
+        margin: 20px auto;
         text-align: center;
 
         &__infos{
             flex: 1;
             @include flex($flex-direction:column);
-            @include content();
             margin: auto;
             text-align: left;
             padding-top: 0;
-
                 &__content{
                     @include content();
-                    margin: 0 auto;
+                    margin: 0 auto auto 0;
+                    text-align: left;
 
                     .subtitle{
                         @include subtitle();
@@ -285,6 +298,7 @@ p{
 
                     p{
                         margin: auto;
+                        text-align: left;
                         font-family: 'Poppins', sans-serif;
                     }
 
@@ -315,7 +329,6 @@ p{
                 flex: 1;
                 @include content();
                 margin: 20px auto;
-                text-align: left;
 
 
                 img{
@@ -396,7 +409,7 @@ p{
         .slider{
             @include content();
             @include flex();
-            margin: 6px auto;
+            margin: 60px auto;
 
             &__images{
                 @include content();
@@ -438,7 +451,6 @@ p{
             justify-content: space-around;
 
             .testimony{
-                flex: 1;
                 display: block;
                 margin: 20px;
                 width: 200px;
@@ -527,21 +539,23 @@ p{
                     position: absolute;
                     width: 100%;
                     height: 35%;
-                    top:30%;
+                    top:70%;
 
                     h4{
                         font-weight: bold;
+                        color: $white;
                     }
 
                     .text{
                         width: 80%;
+                        color: $white;
                     }
                 }
             }
         }
 
         .link{
-            margin: auto;
+            margin: 10px auto;
             @include link();
 
             a{
@@ -596,10 +610,10 @@ p{
 
 
         &__text{
+            flex: 1;
             width: 80%;
             padding-top: 40px;
             text-align: left;
-            flex: 1;
 
                 .subtitle{
                     @include subtitle();
@@ -746,40 +760,42 @@ p{
 
         &__image{
             flex: 1;
-            display: block;
-            text-align: center;
+            @include flex(column);
+            text-align: left;
             padding-top: 30px;
+            margin: auto;
+            filter: drop-shadow(0px 3px 20px rgba(0,0,0,0.1));
 
             img{
-                @include content();
-                margin: auto;
+                height: 160px;
+                width: 350px;
+                margin: auto 120px;
                 @include image();
-                height: 200px;
-                width: 90%;
-            }
 
-            span{
-                width: 70%;
-                color: $white;
-                margin: 30px auto;
-                font-weight: 700;
-                font-size: bold;
-                text-align: left;
             }
 
             p{
-                margin: 50px auto;
-                width: 90%;
+                margin: 20px auto;
+                width: 60%;
                 color: $white;
+                text-align: left;
+
+                span{
+                    color: $white;
+                    margin: 30px auto;
+                    font-weight: 700;
+                    font-size: bold;
+                    text-align: left;
+                }
             }
         }
 
         &__articles{
             flex: 1;
-            @include flex(column);
+            display: block;
 
             .article{
-                margin: 30px auto;
+                margin: 30px auto 0 auto;
                 @include flex();
                 width: auto;
 
@@ -791,7 +807,8 @@ p{
 
                 span{
                     @include text();
-                    margin: auto 40px;
+                    margin: auto 40px auto 0;
+                    text-align: left;
                     font-weight: bold;
                     width: 60%;
                     color: $white;
@@ -829,16 +846,29 @@ p{
 
                 .date{
                     color: $yellow;
-                    margin: 15px auto auto 0;               }
+                    margin: 15px auto 5px 0;
+                    text-align: left
+                }
 
                 .article__title{
-                    @include text();
+                    font-family: 'Poppins';
+                    text-align: left;
                     font-size: 1.5em;
+                    margin: 5px auto 5px 0;
                 }
 
                 p{
                     @include text();
-                    margin: 40px auto;
+                    margin: 10px auto auto 0;
+                    text-align: left;
+                    font-size: 1.2em;
+                    font-weight: bold;
+                    width: 90%;
+
+                    span{
+                        font-size: 0.8em;
+                        font-weight: 300;
+                    }
                 }
             }
         }
@@ -1045,7 +1075,6 @@ p{
             flex: 1;
             display: block;
             @include content();
-            background-color: red;;
 
             img{
                 @include image();
@@ -1103,5 +1132,458 @@ p{
         }
     }
 
+    .footer{
+        background-color: $black-dark;
+        height: 120px;
+        width: 100%;
+        text-align: center;
+
+        &__content{
+            @include flex();
+            @include content();
+            margin: auto;
+
+             .logo{
+                float: right;
+                display: table;
+                height: 100%;
+
+                img{
+                    width: 50px;
+                    height: 50px;
+                    display: table-cell;
+                    vertical-align: middle;
+                }
+            }
+
+            .menu{
+                margin: auto 0;
+                li{
+                    text-align: inline;
+
+                    a{
+                        color: $white;
+                    }
+
+                    a:hover{
+                        color: $yellow;
+                    }
+                }
+            }
+
+            .adress{
+                margin: auto 0 auto auto;
+                float: right;
+                @include flex();
+
+                .adress-box{
+                    color: $white;
+                }
+            }
+        }
+    }
+
+
+  /*responsive for 1024px*/
+  @media screen and (min-width: 1024px) and (max-width: 1279px){
+    .container{
+        .header{
+            &__main{
+                &__content{
+                    justify-content: baseline;
+                    width: 100%;
+                    text-align: left;
+
+                    .logo{
+                        width: 90px;
+                        background-color: purple;
+                        margin: auto 0 auto 10px;
+                    }
+
+                    .menu{
+                        background-color: red;
+
+                    }
+
+
+                }
+            }
+        }
+
+        .about{
+            width: 90%;
+            height: auto;
+
+            &__infos{
+                margin: 30px auto;
+            }
+        }
+
+        .specialities{
+            &__list{
+                width: 90%;
+            }
+        }
+
+        .testimonies{
+            &__list{
+                justify-content: space-between;
+
+                .testimony{
+                    width: 220px;
+                }
+            }
+        }
+
+        .blog{
+            .cards{
+                width: 90%;
+
+
+            }
+        }
+
+        .content{
+            margin: 10px auto;
+            &__image{
+
+                &__content{
+                    .item{
+                        img{
+                            width: 40px;
+                            height: 40px;
+                        }
+                    }
+                }
+                img{
+                    width:  400px;
+                    height: 400px;
+                }
+            }
+
+            &_text{
+                width: 95%;
+                padding-top: 10px;
+            }
+        }
+
+        .price{
+            &__list{
+                width: 95%;
+
+                .price-card{
+                    width: 200px;
+
+                }
+            }
+        }
+
+        .hero{
+
+        }
+    }
+  }
+
+   /*responsive for 768px*/
+   @media screen and (min-width: 768px) and (max-width: 1023px){
+    .container{
+        .header{
+
+        }
+
+         .about{
+            height: auto;
+            display: block;
+            text-align: center;
+
+            &__infos{
+                margin: auto;
+            }
+
+            &__image{
+                text-align: center;
+
+                img{
+                    width: 400px;
+                    height: 350px;
+                    margin: 10px auto
+                }
+            }
+        }
+
+        .specialities{
+            &__list{
+                width: 95%;
+
+                .speciality{
+                    width: 220px;
+                    height: 190px;
+                    margin: 5px;
+
+                    h3{
+                        margin: -110px auto;
+                    }
+                }
+
+
+            }
+        }
+
+        .center{
+            .slider{
+                width: 95%;
+
+                &__images{
+                    width: 100%;
+
+                    img{
+                        width: 150px;
+                        height: 150px;
+                    }
+                }
+            }
+        }
+
+        .testimonies{
+            &__list{
+                margin: 40px auto;
+                height: auto;
+                .testimony{
+                    width: 250px;
+                }
+            }
+        }
+
+        .blog{
+            .cards{
+                width: 95%;
+
+                &__card{
+                    width: 200px;
+                    height: 280px;
+                }
+            }
+        }
+
+        .content{
+            @include flex(column);
+            text-align: center;
+
+            &__text{
+                text-align: center;
+                margin: auto;
+
+                .subtitle{
+                    width: 90%;
+                }
+                .text{
+                    width: 90%;
+                }
+            }
+
+            &__image{
+                margin: auto;
+                &__content{
+                    justify-content: space-around;
+                    text-align: center;
+                    height: 100px;
+                    margin: auto 0;
+                    .item{
+                        width: 220px;
+                        margin: 10px;
+                        img{
+                            width: 40px;
+                            height: 40px;
+                        }
+                    }
+                }
+
+                img{
+                    width: 430px;
+                    height: 330px;
+                }
+            }
+
+        }
+    }
+}
+
+   /*responsive for 575px*/
+@media screen and (min-width: 574px) and (max-width: 767px){
+    .hero{
+
+    }
+
+    .about{
+        height: auto;
+        text-align: center;
+
+        &__infos{
+            text-align: center;
+
+            &__content{
+                margin: 10px auto;
+            }
+
+
+        }
+
+        &__image{
+            img{
+                width: 350px;
+                height: 280px;
+                margin: 10px auto;
+            }
+        }
+    }
+
+    .specialities{
+        &__list{
+            width: 95%;
+            .speciality{
+                width: 200px;
+                height: 200px;
+            }
+        }
+    }
+
+    .center{
+        height: 550px;
+        .slider{
+            width: 95%;
+
+            &__images{
+                width: 100%;
+
+                img{
+                    width: 150px;
+                    height: 150px;
+                }
+            }
+        }
+    }
+
+    .testimonies__list{
+        height: auto;
+    }
+
+    .speci
+
+    .blog{
+        .cards{
+            height: auto;
+            text-align: center;
+
+            &__card{
+                margin: 15px auto 10px auto;
+
+            }
+        }
+
+
+    }
+}
+
+/*responsive for 350px*/
+@media screen and (min-width: 350px) and (max-width: 575px){
+    .hero{
+
+    }
+
+    .about{
+        height: auto;
+        text-align: center;
+        width: 95%;
+
+        &__infos{
+            text-align: center;
+
+            &__content{
+                margin: 10px auto;
+                width: 100%;
+
+                .numbers{
+                    .number{
+                        span{
+                            font-size: 2em;
+                        }
+                    }
+                }
+            }
+
+
+        }
+
+        &__image{
+            img{
+                width: 320px;
+                height: 250px;
+                margin: 10px auto;
+            }
+        }
+    }
+
+    .specialities{
+
+        p{
+            width: 95%;
+            text-align: left;
+        }
+        &__list{
+            width:100%;
+            .speciality{
+                width: 150px;
+                height: 150px;
+                margin: 5px;
+
+                h3{
+                    margin: -90px auto;
+                }
+            }
+        }
+    }
+
+    .center{
+        height: auto;
+        .slider{
+            width: 95%;
+            overflow: hidden;
+
+            &__images{
+                width: 100%;
+
+                img{
+                    width: 150px;
+                    height: 150px;
+                }
+            }
+        }
+    }
+
+    .testimonies{
+        &__list{
+             .testimony{
+                width: 250px;
+            }
+        }
+    }
+
+    .testimonies__list{
+        height: auto;
+    }
+
+    .blog{
+        .cards{
+            height: auto;
+            text-align: center;
+
+            &__card{
+                margin: 15px auto 10px auto;
+
+            }
+        }
+
+
+    }
 
 }
