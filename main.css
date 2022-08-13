@@ -50,10 +50,7 @@ p {
 .header__main {
   width: 100%;
   background-color: white;
-  flex-direction: row;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  display: inline;
 }
 .header__main__content {
   height: 90px;
@@ -76,7 +73,6 @@ p {
 }
 .header__main__content .menu {
   margin: auto 0 auto 0;
-  width: 60%;
 }
 .header__main__content .menu li {
   display: inline;
@@ -518,10 +514,14 @@ p {
 }
 .speciality-hero .btn {
   height: 40px;
-  width: 150px;
+  width: 120px;
   border-radius: 5px;
-  border: 2px white solid;
+  border: 2px #E0C15B solid;
   text-align: center;
+  background-color: #E0C15B;
+  color: white;
+  font-size: 1.1em;
+  font-weight: bold;
   margin: 30px auto;
   border: 3px solid white;
   display: table;
@@ -829,6 +829,7 @@ p {
   justify-content: space-between;
   flex-wrap: wrap;
   width: 100%;
+  margin: 30px auto;
 }
 .avis__content {
   width: 80%;
@@ -837,6 +838,7 @@ p {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  text-align: left;
 }
 .avis__content__form {
   display: block;
@@ -844,88 +846,128 @@ p {
   width: 80%;
 }
 .avis__content__form p {
-  margin: 40px auto 5px auto;
+  margin: 40px auto auto 0;
+  color: #E0C15B;
+  text-align: center;
+  font-family: "Libre Baskerville", sans-serif;
+  font-size: 1.4em;
+  text-align: left;
 }
 .avis__content__form h1 {
-  margin: 15px auto;
+  font-size: 3em;
+  color: #1f2022;
+  margin: 40px auto;
 }
-.avis__content__form form {
+.avis__content__form .form {
   display: block;
+  height: 430px;
 }
-.avis__content__form form .name {
+.avis__content__form .form .name {
   flex-direction: row;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  margin: 10px auto 10px auto;
 }
-.avis__content__form form .name label {
+.avis__content__form .form .name label {
   flex: 1;
+  width: 95%;
+  margin: 10px;
 }
-.avis__content__form form .name label input {
+.avis__content__form .form .name label input {
   width: 90%;
-  border-radius: 5px;
-  border: 2px solid #E5E5E5;
+  margin: auto;
+  height: 40px;
+  padding-left: 20px;
+  text-align: left;
+  font-size: 1em;
+  border: #E5E5E5 1px solid;
 }
-.avis__content__form form .name label .message {
-  border: 2px solid #E5E5E5;
-  border: 5px;
-  width: 90%;
+.avis__content__form .form .name label .message {
+  width: 95%;
+  margin: auto;
+  text-align: left;
   height: 250px;
+  padding-left: 20px;
+  padding-top: 0;
+  font-size: 1em;
+  border: #E5E5E5 1px solid;
 }
-.avis__content__form form .name label button {
-  margin: auto 0 auto auto;
+.avis__content__form .form button {
+  margin: 5px 12px auto auto;
+  height: 40px;
+  width: 120px;
+  border-radius: 5px;
+  border: 2px #E0C15B solid;
+  text-align: center;
+  background-color: #E0C15B;
+  color: white;
+  font-size: 1.1em;
+  font-weight: bold;
+  float: right;
 }
 .avis__content__image {
-  position: relative;
+  flex: 1;
   width: 80%;
   margin: auto;
-  flex-direction: row;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  width: 80%;
-  flex: 1;
+  padding-top: 0;
+  width: 200px;
+  height: 200px;
+  padding-top: 80px;
+  padding-left: 80px;
+  background-color: red;
+  margin: 40px auto auto 0;
+  position: relative;
 }
 .avis__content__image .white {
-  height: 300px;
-  width: 450px;
-  flex-direction: column;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  margin: 80px auto 5px auto;
+  height: 250px;
+  width: 430px;
+  display: block;
+  top: 80px;
+  right: 80px;
   z-index: 99999;
-  background-color: whitesmoke;
+  background-color: white;
   text-align: left;
-  padding-top: 30px;
+  padding-top: 0;
   padding-left: 20px;
+  border-radius: 15px;
+  position: relative;
 }
 .avis__content__image .white .avis-author {
   flex-direction: row;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  justify-content: baseline;
 }
 .avis__content__image .white .avis-author img {
-  width: 60px;
-  height: 60px;
+  width: 40px;
+  height: 40px;
   border-radius: 30px;
+  margin: 0;
+}
+.avis__content__image .white .avis-author .name {
+  margin: 0 5px;
+}
+.avis__content__image .white .avis-author .name span {
+  font-weight: bold;
+  color: #E0C15B;
+  font-size: 1.5em;
+}
+.avis__content__image .white .avis-author .name .date {
+  color: grey;
+  margin: 0 auto;
 }
 .avis__content__image .white p {
-  width: 60%;
+  width: 70%;
+  font-size: 0.9em;
   text-align: left;
   margin: 10px auto auto 10px;
 }
 .avis__content__image .white .date {
-  margin: 10px auto;
-}
-.avis__content__image .black {
-  width: 400px;
-  height: 400px;
-  border-radius: 15px;
-  top: 0;
-  right: 0;
-  background-color: black;
+  margin: 10px auto auto 10px;
+  color: grey;
+  font-size: 0.9em;
 }
 
 .avis-main {
@@ -937,9 +979,8 @@ p {
   background-color: #E5E5E5;
 }
 .avis-main__item {
-  width: 80%;
-  margin: auto;
-  height: 200px;
+  width: 90%;
+  height: 230px;
   border-radius: 15px;
   flex-direction: row;
   display: flex;
@@ -954,20 +995,24 @@ p {
   justify-content: baseline;
   width: 35%;
   text-align: left;
-  padding-top: 0;
+  font-family: "Poppins", sans-serif;
 }
 .avis-main__item .avis-author img {
   border-radius: 50px;
-  height: 60px;
-  width: 60px;
-  margin: 50px 0 auto 80px;
+  height: 70px;
+  width: 70px;
+  margin: auto auto auto 80px;
 }
 .avis-main__item .avis-author p {
   font-weight: bold;
-  margin: 50px auto auto 50px;
+  margin: auto auto auto 20px;
+  color: #1f2022;
+  text-align: left;
 }
 .avis-main__item .avis-author p strong {
   color: #E0C15B;
+  font-size: 1.6em;
+  font-weight: bold;
 }
 .avis-main__item .avis-author .grey {
   color: grey;
@@ -989,10 +1034,16 @@ p {
   text-align: center;
   font-family: "Libre Baskerville", sans-serif;
   width: 90%;
-  margin: 15px auto;
+  margin: 20px auto auto 0;
+  text-align: left;
 }
 .avis-main__item .grey {
-  color: #E5E5E5;
+  color: grey;
+  text-align: center;
+  font-family: "Libre Baskerville", sans-serif;
+  text-align: left;
+  margin: 5px auto 50px 0;
+  font-size: 0.9em;
 }
 
 .contact {
@@ -1124,16 +1175,16 @@ p {
 /*responsive for 1024px*/
 @media screen and (min-width: 1024px) and (max-width: 1279px) {
   .container .header__main__content {
-    justify-content: baseline;
-    width: 100%;
+    width: 95%;
+    margin: auto;
     text-align: left;
   }
   .container .header__main__content .logo {
     width: 90px;
-    background-color: purple;
     margin: auto 0 auto 10px;
   }
   .container .header__main__content .menu {
+    margin: auto 0 auto 0;
     background-color: red;
   }
   .container .about {
@@ -1176,9 +1227,39 @@ p {
   .container .price__list .price-card {
     width: 200px;
   }
+  .container .blog-hero {
+    padding-top: 0;
+  }
+  .container .blog-hero__image {
+    padding-top: 0;
+  }
+  .container .blog-hero__image img {
+    height: 140px;
+    margin: 5px auto;
+    width: 260px;
+  }
+  .container .blog-hero__articles .article {
+    margin: 15px auto 0 auto;
+  }
+  .container .blog-hero__articles .article span {
+    width: 55%;
+  }
+  .container .articles__content {
+    width: 90%;
+  }
+  .container .articles__content .article {
+    width: 230px;
+    margin: 10px;
+  }
+  .container .avis__content {
+    width: 100%;
+  }
 }
 /*responsive for 768px*/
 @media screen and (min-width: 768px) and (max-width: 1023px) {
+  .container .header {
+    display: none;
+  }
   .container .about {
     height: auto;
     display: block;
@@ -1268,9 +1349,48 @@ p {
     width: 430px;
     height: 330px;
   }
+  .container .blog-hero {
+    height: auto;
+    padding-bottom: 50px;
+    padding-left: 10px;
+  }
+  .container .articles__content {
+    width: 90%;
+  }
+  .container .articles__content .article {
+    margin: 10px;
+    width: 300px;
+  }
+  .container .avis__content {
+    width: 100%;
+    flex-direction: column-reverse;
+  }
+  .container .avis-main__item {
+    width: 95%;
+  }
+  .container .avis-main__item .avis-author {
+    display: block;
+    width: 25%;
+    text-align: center;
+  }
+  .container .avis-main__item .avis-author img {
+    width: 60px;
+    height: 60px;
+    margin: 50px auto 0 auto;
+  }
+  .container .avis-main__item .avis-author p {
+    text-align: center;
+    margin: 0px auto;
+  }
+  .container .avis-main__item .avis-text {
+    width: 70%;
+  }
 }
 /*responsive for 575px*/
 @media screen and (min-width: 574px) and (max-width: 767px) {
+  .header {
+    display: none;
+  }
   .about {
     height: auto;
     text-align: center;
@@ -1309,16 +1429,77 @@ p {
   .testimonies__list {
     height: auto;
   }
-  .speci .blog .cards {
+  .content {
+    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-align: center;
+    margin: 5px auto;
+  }
+  .content__text {
+    text-align: center;
+    margin: auto;
+  }
+  .content__text .subtitle {
+    width: 100%;
+    text-align: left;
+  }
+  .content__text .text {
+    width: 100%;
+  }
+  .content__image {
+    margin: auto;
+  }
+  .content__image__content {
+    justify-content: space-around;
+    text-align: center;
+    height: 160px;
+    margin: auto 0;
+  }
+  .content__image__content .item {
+    width: 220px;
+    margin: 10px;
+  }
+  .content__image__content .item img {
+    width: 40px;
+    height: 40px;
+  }
+  .content__image img {
+    width: 350px;
+    height: 280px;
+  }
+  .blog-hero {
+    height: auto;
+    padding-bottom: 50px;
+  }
+  .articles__content {
+    width: 95%;
+  }
+  .articles__content .article {
+    width: 210px;
+    margin: 10px;
+  }
+  .articles__content .article img {
+    width: 200px;
+    height: 120px;
+  }
+  .price__list {
+    width: 95%;
+  }
+  .blog .cards {
     height: auto;
     text-align: center;
   }
-  .speci .blog .cards__card {
+  .blog .cards__card {
     margin: 15px auto 10px auto;
   }
 }
 /*responsive for 350px*/
 @media screen and (min-width: 350px) and (max-width: 575px) {
+  .speciality-hero .text {
+    width: 80%;
+  }
   .about {
     height: auto;
     text-align: center;
@@ -1380,5 +1561,95 @@ p {
   }
   .blog .cards__card {
     margin: 15px auto 10px auto;
+  }
+  .content {
+    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-align: center;
+    margin: 5px auto;
+  }
+  .content__text {
+    text-align: center;
+    margin: auto;
+    width: 95%;
+  }
+  .content__text .subtitle {
+    width: 100%;
+    text-align: left;
+  }
+  .content__text .text {
+    width: 100%;
+  }
+  .content__image {
+    margin: auto;
+  }
+  .content__image__content {
+    justify-content: space-around;
+    text-align: center;
+    height: 330px;
+    margin: auto 0;
+  }
+  .content__image__content .item {
+    width: 180px;
+    margin: 10px;
+  }
+  .content__image__content .item img {
+    width: 40px;
+    height: 40px;
+  }
+  .content__image img {
+    width: 330px;
+    height: 260px;
+  }
+  .price__list {
+    width: 100%;
+  }
+  .price__list .price-card {
+    width: 150px;
+    height: auto;
+    margin: 5px;
+  }
+  .price__list .price-card img {
+    width: 150px;
+    height: 150px;
+  }
+  .blog-hero {
+    height: auto;
+    padding-bottom: 50px;
+    text-align: center;
+  }
+  .blog-hero__image {
+    text-align: center;
+  }
+  .blog-hero__image img {
+    margin: 10px auto 0 auto;
+    width: 330px;
+  }
+  .blog-hero__image p {
+    width: 90%;
+  }
+  .blog-hero__articles {
+    margin: auto;
+    text-align: center;
+  }
+  .blog-hero__articles__content {
+    text-align: center;
+  }
+  .blog-hero__articles__content .article {
+    margin: 10px auto 0 auto;
+    text-align: center;
+  }
+  .blog-hero__articles__content .article img {
+    margin: auto;
+  }
+  .articles__content .article {
+    width: 350px;
+    margin: 20px auto;
+  }
+  .articles__content .article img {
+    width: 250px;
+    height: 130px;
   }
 }/*# sourceMappingURL=main.css.map */
