@@ -899,6 +899,7 @@ p{
         @include flex();
         width: 100%;
         margin: 30px auto;
+        height: auto;
 
         &__content{
             @include content();
@@ -1105,7 +1106,7 @@ p{
             }
 
             p{
-                @include text();
+                    @include text();
                 width: 90%;
                 margin: 20px auto auto 0;
                 text-align: left;
@@ -1127,26 +1128,53 @@ p{
         background-color: $grey-light;
         @include image();
         text-align: center;
-        padding-top: 0;
-        height: 80vh;
+        height: 95vh;
+        margin: 60px auto 30px auto;
 
         &__image{
             flex: 1;
             display: block;
-            @include content();
+            @include content();;
+            margin: 80px auto;
+            text-align: left;
 
-            img{
-                @include image();
-                @include content();
+            &__content{
+                width: 90%;
+                margin: auto;
                 text-align: left;
-                width: 350px;
-                height: 110px;
-            }
+                img{
+                    @include image();
+                    text-align: left;
+                    width: 410px;
+                    height: 130px;
+                    margin: auto 0 20px auto;
+                }
 
-            .text{
-                font-weight: bold;
-                @include content();
+                .text{
+                    font-weight: 900;
+                    color: $black-dark;
+                    text-align: left;
+                    font-family: 'Poppins', sans-serif;
+                    font-size: 1.1em;
+                }
 
+                .email{
+                    font-weight: bold;
+                    @include content();
+                    text-align: left;
+                    margin: 40px auto auto 0;
+                    color: $yellow;
+                }
+
+                .phone{
+                    text-align: left;
+                    margin: 20px auto;
+                }
+
+                .linkedin{
+                    margin: 30px auto auto 0;
+                    text-align: left;
+                }
             }
 
         }
@@ -1158,36 +1186,55 @@ p{
             text-align: left;
 
             .subtitle{
-                @include subtitle();
+                font-size: 2.5em;
+                line-height: 1.1em;
+                margin: 40px auto auto 0;
             }
 
-            .name{
-                @include flex();
+            .form{
+                display: block;
+                height: 430px;
 
-                label{
-                    flex: 1;
+                .name{
+                    @include flex();
+                    margin: 10px auto 10px auto;
 
-                    input{
-                        @include input();
-                    }
-                    .message{
-                        @include message();
-                        width: 300px;
-                        height: 250px;
+                    label{
+                        flex: 1;
+                        width: 95%;
+                        margin: 10px;
+
+                        input{
+                            width: 90%;
+                            margin: auto;
+                            height: 40px;
+                            padding-left: 20px;
+                            text-align: left;
+                            font-size: 1em;
+                            border: $grey-light 1px solid;
+                        }
+
+                        .message{
+                            width: 95%;
+                            margin: auto;
+                            text-align: left;
+                            height: 250px;
+                            padding-left: 20px;
+                            padding-top: 0;
+                            font-size: 1em;
+                            border: $grey-light 1px solid;
+
+                        }
                     }
                 }
 
-                button{
-                    width: 150px;
-                    border: 1px solid $yellow;
-                    height: 50px;
-                    background-color: $yellow;
+
+                    button{
+                        margin: 5px 12px auto auto;
+                        @include btn();
+                        float: left;
+                    }
                 }
-            }
-
-            label{
-
-            }
         }
     }
 
@@ -1383,8 +1430,20 @@ p{
             }
         }
 
-        .hero{
+        .contact{
+            height: auto;
+            width: 95%;
 
+            &__image{
+                width: 90%;
+
+                &__content{
+                    img{
+                        width: 350px;
+                        height: 110px;
+                    }
+                }
+            }
         }
     }
   }
@@ -1563,17 +1622,87 @@ p{
 
             }
         }
+
+
+        .contact{
+            height: auto;
+            width: 95%;
+            flex-direction: column-reverse;
+
+            &__image{
+                width: 80%;
+                margin: 40px auto;
+
+                &__content{
+                    margin: 10px auto;
+                    img{
+                        width: 350px;
+                        margin: 20px auto;
+                        height: 110px;
+                    }
+                }
+            }
+        }
     }
 }
 
    /*responsive for 575px*/
-@media screen and (min-width: 574px) and (max-width: 767px){
+@media screen and (min-width: 575px) and (max-width: 767px){
     .hero{
 
     }
 
     .header{
         display: none;
+    }
+
+    .avis{
+        padding-bottom: 50px;
+
+        &__content{
+            width: 100%;
+            @include flex(column-reverse);
+
+            &__image{
+                display: none;
+            }
+
+            &__form{
+                h1{
+                    line-height: 2em;
+                }
+            }
+        }
+    }
+
+    .avis-main{
+        &__item{
+            margin: 20px auto;
+            width: 80%;
+            height: auto;
+            display: block;
+            padding-left: 15x;
+
+            .avis-author{
+                width: 100%;
+                margin: 15px auto;
+
+                img{
+                    height: 50px;
+                    width: 50px;
+                    margin: 15px auto;
+                }
+            }
+
+            .avis-text{
+                width: 100%;
+
+                p{
+                    margin: 5px auto auto 0;
+                }
+
+            }
+        }
     }
 
     .about{
@@ -1710,12 +1839,36 @@ p{
 
 
     }
+
+    .contact{
+        height: auto;
+        width: 95%;
+        flex-direction: column-reverse;
+
+        &__image{
+            width: 80%;
+            margin: 40px auto;
+
+            &__content{
+                margin: 10px auto;
+                img{
+                    width: 350px;
+                    margin: 20px auto;
+                    height: 110px;
+                }
+            }
+        }
+    }
 }
 
 /*responsive for 350px*/
-@media screen and (min-width: 350px) and (max-width: 575px){
+@media screen and (min-width: 350px) and (max-width: 574px){
     .hero{
 
+    }
+
+    .header{
+        display: none;
     }
 
     .speciality-hero{
@@ -1925,6 +2078,63 @@ p{
                 img{
                     width: 250px;
                     height: 130px;
+                }
+            }
+        }
+    }
+
+
+    .avis{
+        padding-bottom: 50px;
+        @include flex(column-reverse);
+    }
+
+    .avis-main{
+        &__item{
+            margin: 20px auto;
+            width: 80%;
+            height: auto;
+            display: block;
+            padding-left: 40px;
+
+            .avis-author{
+                width: 100%;
+                margin: 15px auto;
+
+                img{
+                    height: 50px;
+                    width: 50px;
+                    margin: 15px auto;
+                }
+            }
+
+            .avis-text{
+                width: 100%;
+
+                p{
+                    margin: 5px auto auto 0;
+                }
+
+            }
+        }
+    }
+
+    .contact{
+        height: auto;
+        width: 95%;
+        flex-direction: column-reverse;
+
+        &__image{
+            width: 80%;
+            margin: 40px auto;
+
+            &__content{
+                margin: 10px auto;
+                width: 100%;
+                img{
+                    width: 250px;
+                    margin: 20px auto;
+                    height: 90px;
                 }
             }
         }

@@ -830,6 +830,7 @@ p {
   flex-wrap: wrap;
   width: 100%;
   margin: 30px auto;
+  height: auto;
 }
 .avis__content {
   width: 80%;
@@ -1056,27 +1057,51 @@ p {
   background-color: #E5E5E5;
   border-radius: 15px;
   text-align: center;
-  padding-top: 0;
-  height: 80vh;
+  height: 95vh;
+  margin: 60px auto 30px auto;
 }
 .contact__image {
   flex: 1;
   display: block;
   width: 80%;
   margin: auto;
+  margin: 80px auto;
+  text-align: left;
 }
-.contact__image img {
-  border-radius: 15px;
-  width: 80%;
+.contact__image__content {
+  width: 90%;
   margin: auto;
   text-align: left;
-  width: 350px;
-  height: 110px;
 }
-.contact__image .text {
+.contact__image__content img {
+  border-radius: 15px;
+  text-align: left;
+  width: 410px;
+  height: 130px;
+  margin: auto 0 20px auto;
+}
+.contact__image__content .text {
+  font-weight: 900;
+  color: #1f2022;
+  text-align: left;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.1em;
+}
+.contact__image__content .email {
   font-weight: bold;
   width: 80%;
   margin: auto;
+  text-align: left;
+  margin: 40px auto auto 0;
+  color: #E0C15B;
+}
+.contact__image__content .phone {
+  text-align: left;
+  margin: 20px auto;
+}
+.contact__image__content .linkedin {
+  margin: 30px auto auto 0;
+  text-align: left;
 }
 .contact__form {
   flex: 1;
@@ -1089,39 +1114,59 @@ p {
   text-align: left;
 }
 .contact__form .subtitle {
-  font-family: "Poppins", sans-serif;
-  color: #E0C15B;
-  line-height: 1.2em;
   font-size: 2.5em;
+  line-height: 1.1em;
+  margin: 40px auto auto 0;
 }
-.contact__form .name {
+.contact__form .form {
+  display: block;
+  height: 430px;
+}
+.contact__form .form .name {
   flex-direction: row;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  margin: 10px auto 10px auto;
 }
-.contact__form .name label {
+.contact__form .form .name label {
   flex: 1;
+  width: 95%;
+  margin: 10px;
 }
-.contact__form .name label input {
-  border-radius: 5px;
-  background-color: white;
-  padding-left: 20px;
+.contact__form .form .name label input {
+  width: 90%;
+  margin: auto;
   height: 40px;
+  padding-left: 20px;
+  text-align: left;
+  font-size: 1em;
+  border: #E5E5E5 1px solid;
 }
-.contact__form .name label .message {
-  width: 300px;
+.contact__form .form .name label .message {
+  width: 95%;
+  margin: auto;
+  text-align: left;
   height: 250px;
-  background-color: white;
-  width: 300px;
-  height: 250px;
+  padding-left: 20px;
+  padding-top: 0;
+  font-size: 1em;
+  border: #E5E5E5 1px solid;
 }
-.contact__form .name button {
-  width: 150px;
-  border: 1px solid #E0C15B;
-  height: 50px;
+.contact__form .form button {
+  margin: 5px 12px auto auto;
+  height: 40px;
+  width: 120px;
+  border-radius: 5px;
+  border: 2px #E0C15B solid;
+  text-align: center;
   background-color: #E0C15B;
+  color: white;
+  font-size: 1.1em;
+  font-weight: bold;
+  float: left;
 }
+
 .footer {
   background-color: #1f2022;
   height: 120px;
@@ -1254,6 +1299,17 @@ p {
   .container .avis__content {
     width: 100%;
   }
+  .container .contact {
+    height: auto;
+    width: 95%;
+  }
+  .container .contact__image {
+    width: 90%;
+  }
+  .container .contact__image__content img {
+    width: 350px;
+    height: 110px;
+  }
 }
 /*responsive for 768px*/
 @media screen and (min-width: 768px) and (max-width: 1023px) {
@@ -1385,11 +1441,66 @@ p {
   .container .avis-main__item .avis-text {
     width: 70%;
   }
+  .container .contact {
+    height: auto;
+    width: 95%;
+    flex-direction: column-reverse;
+  }
+  .container .contact__image {
+    width: 80%;
+    margin: 40px auto;
+  }
+  .container .contact__image__content {
+    margin: 10px auto;
+  }
+  .container .contact__image__content img {
+    width: 350px;
+    margin: 20px auto;
+    height: 110px;
+  }
 }
 /*responsive for 575px*/
-@media screen and (min-width: 574px) and (max-width: 767px) {
+@media screen and (min-width: 575px) and (max-width: 767px) {
   .header {
     display: none;
+  }
+  .avis {
+    padding-bottom: 50px;
+  }
+  .avis__content {
+    width: 100%;
+    flex-direction: column-reverse;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .avis__content__image {
+    display: none;
+  }
+  .avis__content__form h1 {
+    line-height: 2em;
+  }
+  .avis-main__item {
+    margin: 20px auto;
+    width: 80%;
+    height: auto;
+    display: block;
+    padding-left: 15x;
+  }
+  .avis-main__item .avis-author {
+    width: 100%;
+    margin: 15px auto;
+  }
+  .avis-main__item .avis-author img {
+    height: 50px;
+    width: 50px;
+    margin: 15px auto;
+  }
+  .avis-main__item .avis-text {
+    width: 100%;
+  }
+  .avis-main__item .avis-text p {
+    margin: 5px auto auto 0;
   }
   .about {
     height: auto;
@@ -1494,9 +1605,29 @@ p {
   .blog .cards__card {
     margin: 15px auto 10px auto;
   }
+  .contact {
+    height: auto;
+    width: 95%;
+    flex-direction: column-reverse;
+  }
+  .contact__image {
+    width: 80%;
+    margin: 40px auto;
+  }
+  .contact__image__content {
+    margin: 10px auto;
+  }
+  .contact__image__content img {
+    width: 350px;
+    margin: 20px auto;
+    height: 110px;
+  }
 }
 /*responsive for 350px*/
-@media screen and (min-width: 350px) and (max-width: 575px) {
+@media screen and (min-width: 350px) and (max-width: 574px) {
+  .header {
+    display: none;
+  }
   .speciality-hero .text {
     width: 80%;
   }
@@ -1651,5 +1782,52 @@ p {
   .articles__content .article img {
     width: 250px;
     height: 130px;
+  }
+  .avis {
+    padding-bottom: 50px;
+    flex-direction: column-reverse;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .avis-main__item {
+    margin: 20px auto;
+    width: 80%;
+    height: auto;
+    display: block;
+    padding-left: 40px;
+  }
+  .avis-main__item .avis-author {
+    width: 100%;
+    margin: 15px auto;
+  }
+  .avis-main__item .avis-author img {
+    height: 50px;
+    width: 50px;
+    margin: 15px auto;
+  }
+  .avis-main__item .avis-text {
+    width: 100%;
+  }
+  .avis-main__item .avis-text p {
+    margin: 5px auto auto 0;
+  }
+  .contact {
+    height: auto;
+    width: 95%;
+    flex-direction: column-reverse;
+  }
+  .contact__image {
+    width: 80%;
+    margin: 40px auto;
+  }
+  .contact__image__content {
+    margin: 10px auto;
+    width: 100%;
+  }
+  .contact__image__content img {
+    width: 250px;
+    margin: 20px auto;
+    height: 90px;
   }
 }/*# sourceMappingURL=main.css.map */

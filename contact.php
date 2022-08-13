@@ -10,9 +10,10 @@
         <?php include 'header.php'; ?>
             <div class="contact">
                 <div class="contact__image">
+                    <div class="contact__image__content">
                     <img src="public/images/pexels-samad-ismayilov-735552.jpg" alt="">
                     <p class="text">
-                        75016, Paris XXX
+                        75016, Paris XXX <br>
                         France, XXX
                     </p>
 
@@ -21,34 +22,43 @@
                     </p>
 
                     <p class="phone">
-                        +33(0)9 85 02 53 41
+                        +33(0)9 85 02 53 41 <br>
                         +33(0)6 46 84 64 96
                     </p>
+
+                    <div class="linkedin">
+                        ln
+                    </div>
+                    </div>
                 </div>
 
-                <form class="contact__form">
+                <div class="contact__form">
                     <h1 class="subtitle">
-                    Lorem ipsum dolor sit amet
+                    Lorem ipsum <br> dolor sit amet
                     </h1>
 
-                    <div class="name">
-                        <label for="">
-                            <input type="text" name='' placeholder="Nom">
-                        </label>
+                    <form action="" method='' class="form">
+                            <div class="name">
+                                    <label for="">
+                                        <input type="text" placeholder="Nom">
+                                    </label>
 
-                        <label for="">
-                            <input type="text" placeholder="Email">
-                        </label>
-                    </div>
+                                    <label for="">
+                                        <input type="text" placeholder="Email">
+                                    </label>
+                            </div>
 
-                    <label for="">
-                        <input type="text" placeholder="Votre message">
-                    </label>
-
-                        <button class='' type="submit">
-                            Envoyer
-                        </button>
-                </form>
+                            <div class="name">
+                                    <label for="">
+                                        <input type="text" class='message'
+                                        placeholder="Votre message">
+                                    </label>
+                            </div>
+                                <button>
+                                    Envoyer
+                                </button>
+                        </form>
+                </div>
             </div>
 
         <?php include 'footer.php'; ?>

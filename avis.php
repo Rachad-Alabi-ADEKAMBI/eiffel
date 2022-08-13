@@ -64,10 +64,6 @@
                                 </p>
                             </div>
                         </div>
-
-                        <div class="black">
-
-                        </div>
                     </div>
                 </div>
                 <div class="avis-main">
