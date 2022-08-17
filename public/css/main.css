@@ -131,11 +131,14 @@ p {
   font-family: "Poppins", sans-serif;
   font-weight: 300;
   text-align: left;
-  width: 100%;
+  width: 130px;
+  font-size: 1em;
+  font-weight: normal;
 }
 .header__main .adress .adress-box strong {
   font-size: 0.9em;
   font-weight: normal;
+  width: 100%;
 }
 .header__main .adress .adress-box i {
   width: 15px;
@@ -524,7 +527,6 @@ p {
   height: 350px;
   width: 270px;
   display: block;
-  border-radius: 15px;
   position: relative;
 }
 .blog .cards__card img {
@@ -539,7 +541,7 @@ p {
   background-color: #3c3e3e;
   text-align: left;
   position: absolute;
-  width: 270px;
+  width: 260px;
   overflow: hidden;
   height: 45%;
   top: 70%;

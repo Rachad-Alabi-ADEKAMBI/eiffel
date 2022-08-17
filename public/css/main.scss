@@ -226,11 +226,14 @@ p{
                         font-family: 'Poppins', sans-serif;
                         font-weight: 300;
                         text-align: left;
-                        width: 100%;
+                        width: 130px;
+                        font-size: 1em;
+                        font-weight: normal;
 
                         strong{
                             font-size: 0.9em;
                             font-weight: normal ;
+                            width: 100%;
                         }
 
 
@@ -612,11 +615,11 @@ p{
             height: auto;
 
             &__card{
+
                 margin: 15px;
                 height:  350px;
                 width:  270px;
                 display: block;
-                @include image();
                 position: relative;
 
                 img{
@@ -632,7 +635,7 @@ p{
                     background-color: $black-text;
                     text-align: left;
                     position: absolute;
-                    width: 270px;
+                    width: 260px;
                     overflow: hidden;
                     height: 45%;
                     top:70%;

@@ -11,8 +11,6 @@ cette partie ci dessus doit être au dessus des vignettes de spécialités et le
 
 - La partie notre centre et nos équipes comme indiqué sur la maquette est un slider.
 
-
-- La partie notre blog, il manque le bouton “Lire plus d’articles”
-
 - Problème sur le footer, Il manque des éléments (icon calendrier, barre vertical de séparation)
 
+_)(*&^%$#@!+}|||||)
