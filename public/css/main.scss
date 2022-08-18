@@ -142,7 +142,8 @@ p{
 .container{
     display: block;
     position: relative;
-}
+    }
+
     .header{
         width: 100%;
         display: block;
@@ -680,7 +681,7 @@ p{
 
     .speciality-hero{
        @include hero();
-       background: url('public/images/epilation-laser-centre-du-champs-de-mars-1536x1171.jpg');
+       background: url('../images/epilation-laser-centre-du-champs-de-mars-1536x1171.jpg');
         background-size:cover;
         background-repeat: no-repeat;
 
@@ -879,7 +880,7 @@ p{
 
     .blog-hero{
         @include hero();
-        background-image: url('public/images/pexels-samad-ismayilov-735552.jpg');
+        background-image: url('../images/pexels-samad-ismayilov-735552.jpg');
         @include flex();
 
         &__image{

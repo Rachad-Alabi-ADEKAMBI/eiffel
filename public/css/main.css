@@ -590,7 +590,7 @@ p {
   background-position: center;
   background-size: cover;
   margin: 0;
-  background: url("public/images/epilation-laser-centre-du-champs-de-mars-1536x1171.jpg");
+  background: url("../images/epilation-laser-centre-du-champs-de-mars-1536x1171.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -791,7 +791,7 @@ p {
   background-position: center;
   background-size: cover;
   margin: 0;
-  background-image: url("public/images/pexels-samad-ismayilov-735552.jpg");
+  background-image: url("../images/pexels-samad-ismayilov-735552.jpg");
   flex-direction: row;
   display: flex;
   justify-content: space-between;

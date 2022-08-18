@@ -1,13 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-   <?php include 'meta.php'; ?>
+    <meta charset="UTF-8">
+    <link href='https://fonts.googleapis.com/css?family=Libre Baskerville' rel='stylesheet'>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+        integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
 
-    <title>blog</title>
+        <link rel="stylesheet" href="public/css/main.css">
+
+    <title>Maison Eiffel - Blog</title>
 </head>
 <body>
     <div class="container">
-        <?php include 'header.php'; ?>
+        <header class="header">
+            <div class="header__top">
+                <p class="adress-top">
+                    <a href=""><i class="fas fa-location-dot"></i> Nous trouver sur la carte</a>
+                    <a href=""> <i class="fa fa-location-dot"></i> Avis certifies</a>
+                </p>
+            </div>
+
+            <div class="header__main">
+                   <div class="header__main__content">
+                         <a href="index.html" class="logo">
+                            <img src="public/images/logo.png" alt="">
+                         </a>
+
+                        <ul class='menu'>
+                            <li>
+                                <a href="index.html">Notre centre <i class="far fa-location-dot"></i></a>
+                            </li>
+
+                            <li>
+                                <a href="specialites.html">Nos specialites</a>
+                            </li>
+
+                            <li>
+                                <a href="blog.html">Blog</a>
+                            </li>
+
+                            <li>
+                                <a href="avis.html">Avis</a>
+                            </li>
+
+                            <li>
+                                <a href="contact.html">
+                                    Contact
+                                </a>
+                            </li>
+                        </ul>
+
+                        <label class="mobile-menu-btn">
+                             <i class="fas fa-bars" onclick='displayMenu()' id='mobile-menu-btn'></i>
+                             <img src="public/pictos/xmark-solid.svg" alt="" onclick='closeMenu()' id='mobile-menu-btn-close'>
+                        </label>
+
+                        <div class="adress">
+                            <div class="adress-box">
+                                Paris 11 <br>
+                               <strong><i class="far fa-calendar"></i> 01 36 78 94 25 |</strong> <br>
+                                <a href="">Prendre Rdv</a>
+
+                            </div>
+
+                            <div class="adress-box">
+                                Paris 11 <br>
+                                <i class="far fa-calendar"></i> 01 36 78 94 25<br>
+                                <a href="">Prendre Rdv</a>
+
+                            </div>
+
+
+                        </div>
+                    </div>
+            </div>
+
+            <div class="header__list" id='header__list'>
+                <ul>
+                    <li>
+                        <a href="index.html">Notre centre</a>
+                    </li>
+
+                    <li>
+                        <a href="specialites.html">Nos specialites</a>
+                    </li>
+
+                    <li>
+                        <a href="blog.html">Blog</a>
+                    </li>
+
+                    <li>
+                        <a href="avis.html">
+                            Avis
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="contact.html">
+                            Contact
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="header__bottom">
+                <ul class="treatments">
+                    <li>
+                        <a href="">
+                            Epilation Laser
+                        </a>
+
+                    </li>
+
+                    <li>
+                        <a href="">Medecine esthetique</a>
+                    </li>
+
+                    <li>
+                        <a href="">
+                            Hydrafacial
+                        </a>
+                    </li>
+
+
+                    <li>
+                        <a href="">Soins visage</a>
+                    </li>
+
+                    <li>
+                        <a href="">
+                            Soins capillaires
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="">
+                            Traitements de la peau
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </header>
 
         <div class="blog-hero">
             <div class="blog-hero__image">
@@ -140,8 +273,61 @@
                 <li><a href="">4</a></li>
                 <li><a href="">5</a></li>
             </ul>
+        </div> <br> <br> <br> <br>
+        <footer class="footer">
+            <div class="footer__content">
+                <a class="logo" href="index.html">
+                    <img src="public/images/logo.png" alt="">
+                </a>
 
-            <?php include 'footer.php'; ?>
-        </div>
+                <ul class='menu'>
+                    <li>
+                        <a href="index.html">Notre centre</a>
+                    </li>
+
+                    <li>
+                        <a href="specialites.html">
+                            Nos specialites
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="blog.html">
+                            Blog
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="avis.html">
+                            AVis
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="contact.html">
+                            Contact
+                        </a>
+                    </li>
+                </ul>
+
+                <div class="adress">
+                    <div class="adress-box">
+                        Paris 11 <br>
+                        <strong><i class="far fa-calendar"></i> 01 36 78 94 25  |</strong> <br>
+                        <a href="contact.html">
+                            Prendre rdv
+                        </a>
+                    </div>
+
+                    <div class="adress-box">
+                        Paris 11 <br>
+                       <strong><i class="far fa-calendar"></i> 01 36 78 94 25</strong> <br>
+                        <a href="contact.html">
+                            Prendre rdv
+                        </a>
+                    </div>
+                </div>
+            </div>
+    </footer>
 </body>
 </html>
