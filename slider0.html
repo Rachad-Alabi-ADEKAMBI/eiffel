@@ -1,102 +1,94 @@
 <!DOCTYPE html>
-<!-- Created By CodingNepal - www.codingnepalweb.com -->
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!--<title>Responsive Testimonial Slider</title>-->
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Swiper CSS -->
-    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+        integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+        <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+      />
+      <link rel="stylesheet" href="style.css">
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="style.css" />
+  <title>Document</title>
 
-    <!-- Boxicons CSS -->
-    <link
-      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <section class="container">
-      <div class="testimonial mySwiper">
-        <div class="testi-content swiper-wrapper">
-          <div class="slide swiper-slide">
-            <img src="images/img1.jpg" alt="" class="image" />
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam,
-              saepe provident dolorem a quaerat quo error facere nihil deleniti
-              eligendi ipsum adipisci, fugit, architecto amet asperiores
-              doloremque deserunt eum nemo.
-            </p>
+</head>
+<body>
+  <section>
+    <div class="swiper mySwiper container">
+      <div class="swiper-wrapper content">
+          <div class="swiper-slide card">
+            <div class="card-content">
+              <div class="image">
+                  <img src="public/images/27de1f60e3c1a90a389aa6794cef999b.jpeg" alt="">
 
-            <i class="bx bxs-quote-alt-left quote-icon"></i>
+              </div>
 
-            <div class="details">
-              <span class="name">Marnie Lotter</span>
-              <span class="job">Web Developer</span>
-            </div>
+              <div class="media-icons">
+                <i class="fab fa-facebook"></i>
+              </div>
           </div>
-          <div class="slide swiper-slide">
-            <img src="images/img2.jpg" alt="" class="image" />
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam,
-              saepe provident dolorem a quaerat quo error facere nihil deleniti
-              eligendi ipsum adipisci, fugit, architecto amet asperiores
-              doloremque deserunt eum nemo.
-            </p>
-
-            <i class="bx bxs-quote-alt-left quote-icon"></i>
-
-            <div class="details">
-              <span class="name">Marnie Lotter</span>
-              <span class="job">Web Developer</span>
-            </div>
           </div>
-          <div class="slide swiper-slide">
-            <img src="images/img3.jpg" alt="" class="image" />
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam,
-              saepe provident dolorem a quaerat quo error facere nihil deleniti
-              eligendi ipsum adipisci, fugit, architecto amet asperiores
-              doloremque deserunt eum nemo.
-            </p>
 
-            <i class="bx bxs-quote-alt-left quote-icon"></i>
+          <div class="swiper-slide card">
+            <div class="card-content">
+              <div class="image">
+                  <img src="public/images/27de1f60e3c1a90a389aa6794cef999b.jpeg" alt="">
 
-            <div class="details">
-              <span class="name">Marnie Lotter</span>
-              <span class="job">Web Developer</span>
-            </div>
+              </div>
+
+              <div class="media-icons">
+                <i class="fab fa-facebook"></i>
+              </div>
           </div>
-        </div>
-        <div class="swiper-button-next nav-btn"></div>
-        <div class="swiper-button-prev nav-btn"></div>
-        <div class="swiper-pagination"></div>
+          </div>
+
+          <div class="swiper-slide card">
+            <div class="card-content">
+              <div class="image">
+                  <img src="public/images/27de1f60e3c1a90a389aa6794cef999b.jpeg" alt="">
+
+              </div>
+
+              <div class="media-icons">
+                <i class="fab fa-facebook"></i>
+              </div>
+          </div>
+          </div>
       </div>
-    </section>
 
-    <!-- Swiper JS -->
-    <!--<script src="js/swiper-bundle.min.js"></script>-->
-    <!-- JavaScript -->
-    <!--<script src="js/script.js"></script>-->
-    <script>
-         var swiper = new Swiper(".mySwiper", {
-  slidesPerView: 1,
-  grabCursor: true,
-  loop: true,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-});
+        <div class="swiper-button-next">
+            <div class="swiper-pagination-bullet"></div>
+        </div>
+        <div class="swiper-button-prev">
+          <div class="swiper-pagination-bullet"></div>
+        </div>
+        <div class="swiper-pagination">*</div>
+    </div>
+  </section>
+   <!-- Swiper JS -->
+   <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 
-    </script>
-  </body>
+   <!-- Initialize Swiper -->
+   <script>
+     var swiper = new Swiper(".mySwiper", {
+       slidesPerView: 3,
+       spaceBetween: 30,
+       slidesPerGroup: 3,
+       loop: true,
+       loopFillGroupWithBlank: true,
+       pagination: {
+         el: ".swiper-pagination",
+         clickable: true,
+       },
+       navigation: {
+         nextEl: ".swiper-button-next",
+         prevEl: ".swiper-button-prev",
+       },
+     });
+   </script>
+</body>
 </html>

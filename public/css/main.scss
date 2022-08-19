@@ -212,8 +212,18 @@ p{
                     }
 
                 .mobile-menu-btn{
+                    cursor: pointer;
+                    @include flex;
                     display: none;
+
+                    #close, #open{
+                        display: none;
+                    }
+
+
                 }
+
+
 
                 .adress{
                     color: $black;
@@ -293,7 +303,7 @@ p{
             margin: auto;
             height: auto;
             text-align: center;
-            width: 100%;
+            width: 80%;
             padding-top: 10px;
             li{
                 text-align: center;
@@ -302,7 +312,7 @@ p{
                 display: block;
                 a{
                     color: $white;
-                    text-align: center;
+                    text-align: left;
                     font-weight: bold;
                     font-family: 'Poppins', sans-serif;
                 }
@@ -1654,10 +1664,24 @@ p{
                     }
 
                     .mobile-menu-btn{
-                        display: block;
-                        text-align: center;
-                        padding-top: 7px;
-                        padding-left: 10px
+                        display: table;
+                        margin-left: 10px;
+                        position: relative;
+
+                        #open{
+                            display: table-cell;
+                            vertical-align: middle;
+                            margin: 20px auto;
+                            font-size: 1.5em;
+                         }
+
+                        #close{
+                            display: table-cell;
+                            vertical-align: middle;
+                            margin: 20px auto;
+                            font-size: 1.5em;
+                            display: none;
+                        }
                     }
 
                     .adress{
@@ -1672,7 +1696,6 @@ p{
                 text-align: center;
                 top: 20px;
                 display: none;
-
             }
         }
 
@@ -1914,14 +1937,28 @@ p{
                 }
 
                 .mobile-menu-btn{
-                    display: block;
-                    text-align: center;
-                    padding-top: 7px;
-                    padding-left: 10px
+                    display: table;
+                    margin-left: 10px;
+                    position: relative;
+
+                    #open{
+                        display: table-cell;
+                        vertical-align: middle;
+                        margin: 15px auto;
+                        font-size: 1.5em;
+                     }
+
+                    #close{
+                        display: table-cell;
+                        vertical-align: middle;
+                        margin: 15px auto;
+                        font-size: 1.5em;
+                        display: none;
+                    }
                 }
 
                 .adress{
-                    margin: auto 5px auto auto;
+                    margin: auto 0px auto auto;
                     line-height: 1.2em;
                     letter-spacing: 0.05em;
                 }
@@ -2206,11 +2243,24 @@ p{
                 }
 
                 .mobile-menu-btn{
-                    display: block;
-                    text-align: center;
+                    display: table;
+                    margin-left: 10px;
+                    position: relative;
 
-                    padding-top: 7px;
-                    padding-left: 10px
+                    #open{
+                        display: table-cell;
+                        vertical-align: middle;
+                        margin: 20px auto;
+                        font-size: 1.5em;
+                     }
+
+                    #close{
+                        display: table-cell;
+                        vertical-align: middle;
+                        margin: 20px auto;
+                        font-size: 1.5em;
+                        display: none;
+                    }
                 }
 
                 .adress{

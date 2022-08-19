@@ -1,11 +1,13 @@
 function displayMenu() {
     document.getElementById("header__list").style.display = "block";
-  //  document.getElementById("mobile-menu-btn").style.display = "none";
-    //console.log('ok');
+    document.getElementById("open").style.display = "none";
+    document.getElementById("close").style.display = "block";
+
 }
 
 function closeMenu() {
     document.getElementById("header__list").style.display = "none";
-//    document.getElementById("mobile-menu-btn-close").style.display = "none";
-    //console.log('ok');
+    document.getElementById("close").style.display = "none";
+    document.getElementById("open").style.display = "block";
+
 }

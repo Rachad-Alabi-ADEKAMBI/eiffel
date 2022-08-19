@@ -10,7 +10,3 @@ Exemple fonctionnement**
 cette partie ci dessus doit être au dessus des vignettes de spécialités et les vignettes doivent de ce fait changer en fonction du tabs sélectionner (sans rafraichir la page).
 
 - La partie notre centre et nos équipes comme indiqué sur la maquette est un slider.
-
-- Problème sur le footer, Il manque des éléments (icon calendrier, barre vertical de séparation)
-
-_)(*&^%$#@!+}|||||)

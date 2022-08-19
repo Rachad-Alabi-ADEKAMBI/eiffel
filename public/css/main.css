@@ -114,6 +114,14 @@ p {
   color: #E0C15B;
 }
 .header__main .mobile-menu-btn {
+  cursor: pointer;
+  flex-direction: row;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  display: none;
+}
+.header__main .mobile-menu-btn #close, .header__main .mobile-menu-btn #open {
   display: none;
 }
 .header__main .adress {
@@ -184,7 +192,7 @@ p {
   margin: auto;
   height: auto;
   text-align: center;
-  width: 100%;
+  width: 80%;
   padding-top: 10px;
 }
 .header__list ul li {
@@ -195,7 +203,7 @@ p {
 }
 .header__list ul li a {
   color: white;
-  text-align: center;
+  text-align: left;
   font-weight: bold;
   font-family: "Poppins", sans-serif;
 }
@@ -1473,10 +1481,22 @@ p {
     margin: 5px;
   }
   .container .header__main__content .mobile-menu-btn {
-    display: block;
-    text-align: center;
-    padding-top: 7px;
-    padding-left: 10px;
+    display: table;
+    margin-left: 10px;
+    position: relative;
+  }
+  .container .header__main__content .mobile-menu-btn #open {
+    display: table-cell;
+    vertical-align: middle;
+    margin: 20px auto;
+    font-size: 1.5em;
+  }
+  .container .header__main__content .mobile-menu-btn #close {
+    display: table-cell;
+    vertical-align: middle;
+    margin: 20px auto;
+    font-size: 1.5em;
+    display: none;
   }
   .container .header__main__content .adress {
     margin: auto 5px auto auto;
@@ -1667,13 +1687,25 @@ p {
     margin: 5px;
   }
   .header__main__content .mobile-menu-btn {
-    display: block;
-    text-align: center;
-    padding-top: 7px;
-    padding-left: 10px;
+    display: table;
+    margin-left: 10px;
+    position: relative;
+  }
+  .header__main__content .mobile-menu-btn #open {
+    display: table-cell;
+    vertical-align: middle;
+    margin: 15px auto;
+    font-size: 1.5em;
+  }
+  .header__main__content .mobile-menu-btn #close {
+    display: table-cell;
+    vertical-align: middle;
+    margin: 15px auto;
+    font-size: 1.5em;
+    display: none;
   }
   .header__main__content .adress {
-    margin: auto 5px auto auto;
+    margin: auto 0px auto auto;
     line-height: 1.2em;
     letter-spacing: 0.05em;
   }
@@ -1896,10 +1928,22 @@ p {
     margin: 5px;
   }
   .header__main__content .mobile-menu-btn {
-    display: block;
-    text-align: center;
-    padding-top: 7px;
-    padding-left: 10px;
+    display: table;
+    margin-left: 10px;
+    position: relative;
+  }
+  .header__main__content .mobile-menu-btn #open {
+    display: table-cell;
+    vertical-align: middle;
+    margin: 20px auto;
+    font-size: 1.5em;
+  }
+  .header__main__content .mobile-menu-btn #close {
+    display: table-cell;
+    vertical-align: middle;
+    margin: 20px auto;
+    font-size: 1.5em;
+    display: none;
   }
   .header__main__content .adress {
     margin: auto 0;
