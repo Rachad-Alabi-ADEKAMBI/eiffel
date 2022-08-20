@@ -30,7 +30,7 @@
 
                         <ul class='menu'>
                             <li>
-                                <a href="index.html">Notre centre <i class="far fa-location-dot"></i></a>
+                                <a href="index.html">Notre centre</a>
                             </li>
 
                             <li>
@@ -53,8 +53,8 @@
                         </ul>
 
                         <label class="mobile-menu-btn">
-                             <i class="fas fa-bars" onclick='displayMenu()' id='mobile-menu-btn'></i>
-                             <img src="public/pictos/xmark-solid.svg" alt="" onclick='closeMenu()' id='mobile-menu-btn-close'>
+                             <i class="fas fa-bars" onclick='displayMenu()' id='open'></i>
+                             <i class="fas fa-times"  onclick='closeMenu()' id='close'></i>
                         </label>
 
                         <div class="adress">
@@ -67,7 +67,7 @@
 
                             <div class="adress-box">
                                 Paris 11 <br>
-                                <i class="far fa-calendar"></i> 01 36 78 94 25<br>
+                                <span><i class="far fa-calendar"></i> 01 36 78 94 25<br></span>
                                 <a href="">Prendre Rdv</a>
 
                             </div>
@@ -105,65 +105,146 @@
                 </ul>
             </div>
 
-            <div class="header__bottom">
-                <ul class="treatments">
-                    <li>
-                        <a href="">
-                            Epilation Laser
-                        </a>
 
-                    </li>
-
-                    <li>
-                        <a href="">Medecine esthetique</a>
-                    </li>
-
-                    <li>
-                        <a href="">
-                            Hydrafacial
-                        </a>
-                    </li>
-
-
-                    <li>
-                        <a href="">Soins visage</a>
-                    </li>
-
-                    <li>
-                        <a href="">
-                            Soins capillaires
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="">
-                            Traitements de la peau
-                        </a>
-                    </li>
-                </ul>
-            </div>
         </header>
 
-        <div class="hero speciality-hero">
-            <h1>
-                Soins visages
-            </h1>
+        <div class="wrapper">
+            <input type="radio" name="slider" checked id="el">
+            <input type="radio" name="slider" id="me">
+            <input type="radio" name="slider" id="hy">
+            <input type="radio" name="slider" id="sv">
+            <input type="radio" name="slider" id="sc">
+            <input type="radio" name="slider" id="tp">
+             <nav>
+              <label for="el" class="label">Epilation laser</label>
+              <label for="me" class="label">Medecine esthetique</label>
+              <label for="hy" class="label">Hydrafacial</label>
+              <label for="sv" class="lanel">Soins Visages</label>
+              <label for="sc" class="label">Soins capillaires</label>
+              <label for="tp" class="label">Traitements de peau</label>
+               <div class="slider"></div>
+            </nav>
+            <section>
+              <div class="content content-1">
+                    <div class="hero speciality-hero">
+                        <h1>
+                            Soins visages
+                        </h1>
 
-            <p class="text">
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
-            labore et dolore magna aliquyam erat, sed.
-            </p>
+                        <p class="text">
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                        labore et dolore magna aliquyam erat, sed.
+                        </p>
 
-            <div class="btn">
-                <a href="">
-                    En savoir plus
-                </a>
+                        <div class="btn">
+                            <a href="contact.html">
+                                En savoir plus
+                            </a>
+                        </div>
+                    </div>
+                </div>
+              <div class="content content-2">
+                <div class="hero speciality-hero2">
+                    <h1>
+                        Médécine esthétique
+                    </h1>
+
+                    <p class="text">
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                    labore et dolore magna aliquyam erat, sed.
+                    </p>
+
+                    <div class="btn">
+                        <a href="contact.html">
+                            En savoir plus
+                        </a>
+                    </div>
+                </div>
+                </div>
+
+              <div class="content content-3">
+                <div class="hero speciality-hero3">
+                    <h1>
+                        Hydrafacial
+                    </h1>
+
+                    <p class="text">
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                    labore et dolore magna aliquyam erat, sed.
+                    </p>
+
+                    <div class="btn">
+                        <a href="contact.html">
+                            En savoir plus
+                        </a>
+                    </div>
+                </div>
+                </div>
+
+              <div class="content content-4">
+                <div class="hero speciality-hero">
+                    <h1>
+                        Soins visages
+                    </h1>
+
+                    <p class="text">
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                    labore et dolore magna aliquyam erat, sed.
+                    </p>
+
+                    <div class="btn">
+                        <a href="contact.html">
+                            En savoir plus
+                        </a>
+                    </div>
+                </div>
             </div>
-        </div>
 
-        <div class="content">
-            <div class="content__text">
-                <div class="content__text__content">
+              <div class="content content-5">
+                <div class="hero speciality-hero">
+                    <h1>
+                        Soins capillaires
+                    </h1>
+
+                    <p class="text">
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                    labore et dolore magna aliquyam erat, sed.
+                    </p>
+
+                    <div class="btn">
+                        <a href="contact.html">
+                            En savoir plus
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content content-6">
+                <div class="hero speciality-hero6">
+                    <h1>
+                        Traitementsde la peau
+                    </h1>
+
+                    <p class="text">
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                    labore et dolore magna aliquyam erat, sed.
+                    </p>
+
+                    <div class="btn">
+                        <a href="contact.html">
+                            En savoir plus
+                        </a>
+                    </div>
+                </div>
+            </div>
+            </section>
+          </div>
+
+
+
+        <div class="inner">
+            <div class="inner__text">
+                <div class="inner__text__content">
                 <h2 class="subtitle">
                     Des traitements adaptes
                 </h2>
@@ -181,8 +262,8 @@
                 </div>
             </div>
 
-            <div class="content__image">
-                <div class="content__image__content">
+            <div class="inner__image">
+                <div class="inner__image__content">
                 <div class="item">
                     <img src="public/pictos/skincare.svg" alt="">
                     <span>Hydrafacial</span>
@@ -202,12 +283,12 @@
             </div>
         </div>
 
-        <div class="content">
-            <div class="content__image">
+        <div class="inner">
+            <div class="inner__image">
                 <img src="public/images/pexels-elina-fairytale-3865530.jpg" alt="">
             </div>
 
-            <div class="content__text">
+            <div class="inner__text">
                 <h2 class="subtitle">
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                 </h2>
@@ -217,8 +298,8 @@
         </div>
 
 
-        <div class="content">
-             <div class="content__text">
+        <div class="inner">
+             <div class="inner__text">
                 <h2 class="subtitle">
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                 </h2>
@@ -227,37 +308,47 @@
                                                     Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
                                         sed diam nonumy eirmod tempor invidunt ut labore et
                                         dolore magna aliquyam erat, sed diam voluptua
-                                <ul>
-                                    <li>
-                                        <i></i>
-                                        Lorem ipsum dolor sit amet, consetetu
-                                    </li>
 
-                                    <li>
-                                        <i>
-                                        Lorem ipsum dolor sit amet, consetetu
-                                        </i>
-                                    </li>
-
-                                    <li>
-                                        <i></i>
-                                        Lorem ipsum dolor sit amet, consetetu
-                                    </li>
-
-                                    <li>
-                                        <i></i>
-                                        Lorem ipsum dolor sit amet, consetetu
-                                    </li>
-
-                                    <li>
-                                        <i></i>
-                                        Lorem ipsum dolor sit amet, consetetu
-                                    </li>
-                                </ul>
                     </p>
+                    <ul>
+                        <li>
+                            <div class="circle">
+                                >
+                            </div>
+                            Lorem ipsum dolor sit amet, consetetu
+                        </li>
+
+                        <li>
+                            <div class="circle">
+                                >
+                            </div>
+                            Lorem ipsum dolor sit amet, consetetu
+                        </li>
+
+                        <li>
+                            <div class="circle">
+                                >
+                            </div>
+                            Lorem ipsum dolor sit amet, consetetu
+                        </li>
+
+                        <li>
+                            <div class="circle">
+                                >
+                            </div>
+                            Lorem ipsum dolor sit amet, consetetu
+                        </li>
+
+                        <li>
+                            <div class="circle">
+                                >
+                            </div>
+                            Lorem ipsum dolor sit amet, consetetu
+                        </li>
+                    </ul>
             </div>
 
-            <div class="content__image">
+            <div class="inner__image">
                 <img src="public/images/pexels-elina-fairytale-3865530.jpg" alt="">
             </div>
 
@@ -433,5 +524,6 @@
             </div>
     </footer>
     </div>
+    <script src="public/js/script.js"></script>
 </body>
 </html>

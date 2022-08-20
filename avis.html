@@ -15,7 +15,7 @@
         <header class="header">
             <div class="header__top">
                 <p class="adress-top">
-                    <a href=""><i class="fas fa-location-dot"></i> Nous trouver sur la carte</a>
+                    <a href=""><i class="far fa-location-dot"></i> Nous trouver sur la carte</a>
                     <a href=""> <i class="fa fa-location-dot"></i> Avis certifies</a>
                 </p>
             </div>
@@ -28,7 +28,7 @@
 
                         <ul class='menu'>
                             <li>
-                                <a href="index.html">Notre centre <i class="far fa-location-dot"></i></a>
+                                <a href="index.html">Notre centre</a>
                             </li>
 
                             <li>
@@ -51,8 +51,8 @@
                         </ul>
 
                         <label class="mobile-menu-btn">
-                             <i class="fas fa-bars" onclick='displayMenu()' id='mobile-menu-btn'></i>
-                             <img src="public/pictos/xmark-solid.svg" alt="" onclick='closeMenu()' id='mobile-menu-btn-close'>
+                             <i class="fas fa-bars" onclick='displayMenu()' id='open'></i>
+                             <i class="fas fa-times"  onclick='closeMenu()' id='close'></i>
                         </label>
 
                         <div class="adress">
@@ -65,7 +65,7 @@
 
                             <div class="adress-box">
                                 Paris 11 <br>
-                                <i class="far fa-calendar"></i> 01 36 78 94 25<br>
+                                <span><i class="far fa-calendar"></i> 01 36 78 94 25<br></span>
                                 <a href="">Prendre Rdv</a>
 
                             </div>
@@ -103,44 +103,10 @@
                 </ul>
             </div>
 
-            <div class="header__bottom">
-                <ul class="treatments">
-                    <li>
-                        <a href="">
-                            Epilation Laser
-                        </a>
 
-                    </li>
-
-                    <li>
-                        <a href="">Medecine esthetique</a>
-                    </li>
-
-                    <li>
-                        <a href="">
-                            Hydrafacial
-                        </a>
-                    </li>
-
-
-                    <li>
-                        <a href="">Soins visage</a>
-                    </li>
-
-                    <li>
-                        <a href="">
-                            Soins capillaires
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="">
-                            Traitements de la peau
-                        </a>
-                    </li>
-                </ul>
-            </div>
         </header>
+
+
             <div class="avis">
                 <div class="avis__content">
                     <div class="avis__content__form">
@@ -196,7 +162,9 @@
                                     08 Juillet 2022
                                 </p>
                         </div>
-                        <img src="public/images/pexels-samad-ismayilov-735552.jpg" alt="">
+                        <div class="img">
+
+                        </div>
 
                     </div>
                 </div>
@@ -300,7 +268,7 @@
         <footer class="footer">
                 <div class="footer__content">
                     <a class="logo" href="index.html">
-                        <img src="public/images/logo.png" alt="">
+                        <img src="public/images/logo-light.png" alt="">
                     </a>
 
                     <ul class='menu'>

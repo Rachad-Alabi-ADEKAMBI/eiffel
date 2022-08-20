@@ -10,6 +10,17 @@
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
         integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
 
+        <script src="https://kit.fontawesome.com/b14771b76e.js" crossorigin="anonymous"></script>
+
+       <!--<title>Responsive Card Slider</title>-->
+       <link
+       rel="stylesheet"
+       href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+     />
+
+      <link rel="stylesheet" href="swiper-bundle.min.css">
+
+
 
     <title>Maison Eiffel - Accueil</title>
 </head>
@@ -18,8 +29,8 @@
         <header class="header">
             <div class="header__top">
                 <p class="adress-top">
-                    <a href=""><i class="fas fa-location-dot"></i> Nous trouver sur la carte</a>
-                    <a href=""> <i class="fa fa-location-dot"></i> Avis certifies</a>
+                    <a href=""><i class='fas fa-map-marker-alt'></i> Nous trouver sur la carte</a>
+                    <a href=""> <i class="far fa-star"></i> Avis certifies</a>
                 </p>
             </div>
 
@@ -35,7 +46,7 @@
                             </li>
 
                             <li>
-                                <a href="specialites.html">Nos specialites</a>
+                                <a href="specialites.html">Nos spécialités</a>
                             </li>
 
                             <li>
@@ -62,14 +73,14 @@
                             <div class="adress-box">
                                 Paris 11 <br>
                                <strong><i class="far fa-calendar"></i> 01 36 78 94 25 |</strong> <br>
-                                <a href="">Prendre Rdv</a>
+                                <a href="contact.html">Prendre Rdv</a>
 
                             </div>
 
                             <div class="adress-box">
                                 Paris 11 <br>
-                                <i class="far fa-calendar"></i> 01 36 78 94 25<br>
-                                <a href="">Prendre Rdv</a>
+                                <span><i class="far fa-calendar"></i> 01 36 78 94 25<br></span>
+                                <a href="contact.html">Prendre Rdv</a>
 
                             </div>
 
@@ -112,7 +123,7 @@
         <div class="hero">
             <div class="hero__main">
                 <h1>
-                    Lorem ipsum <i class="fa-regular fa-star-half-stroke"></i>
+                    Lorem ipsum <i class="fas fa-location-check"></i>
                 </h1>
 
                 <p>
@@ -170,7 +181,7 @@
         </div>
 
         <div class="specialities">
-            <h2 class='title'>
+            <h2 class='subtitle'>
                 NOS SPECIALITES
             </h2>
 
@@ -184,44 +195,44 @@
                     <div class="speciality">
                         <img src="public/images/pexels-orhun-rüzgar-öz-10822254.jpg" alt="">
                         <h3>
-                            EPILATION LASER
+                            Epilation laser
                         </h3>
                     </div>
 
                     <div class="speciality">
                         <img src="public/images/pexels-orhun-rüzgar-öz-10822254.jpg" alt="">
                         <h3>
-                            EPILATION LASER
+                            Medecine <br> esthetique
                         </h3>
                     </div>
 
                     <div class="speciality">
                         <img src="public/images/pexels-orhun-rüzgar-öz-10822254.jpg" alt="">
                         <h3>
-                            EPILATION LASER
-                        </h3>
-                    </div>
-            </div>
-
-            <div class="specialities__list">
-                    <div class="speciality">
-                        <img src="public/images/pexels-orhun-rüzgar-öz-10822254.jpg" alt="">
-                        <h3>
-                            EPILATION LASER
+                            Hydrafacial
                         </h3>
                     </div>
 
                     <div class="speciality">
                         <img src="public/images/pexels-orhun-rüzgar-öz-10822254.jpg" alt="">
                         <h3>
-                            EPILATION LASER
+                            Soins visage
                         </h3>
                     </div>
 
                     <div class="speciality">
                         <img src="public/images/pexels-orhun-rüzgar-öz-10822254.jpg" alt="">
                         <h3>
-                            EPILATION LASER
+                            Soins  <br>
+                            capillaires
+                        </h3>
+                    </div>
+
+                    <div class="speciality">
+                        <img src="public/images/pexels-orhun-rüzgar-öz-10822254.jpg" alt="">
+                        <h3>
+                            Traitements <br>
+                            de la peau
                         </h3>
                     </div>
             </div>
@@ -241,19 +252,32 @@
             </P>
 
             <div class="slider">
-                <div class="slider__images">
-                    <img src="public/images/pexels-orhun-rüzgar-öz-10822254.jpg    " alt="">
-                    <img src="public/images/pexels-elina-fairytale-3865530.jpg" alt="">
-                    <img src="public/images/pexels-gustavo-fring-5622040.jpg" alt="">
+                <div class="slide-container swiper">
+                    <div class="slide-content">
+                        <div class="card-wrapper swiper-wrapper">
+                            <div class="card swiper-slide">
 
+                                <img src="./public/images/pexels-gustavo-fring-5622040.jpg" alt="">
+                            </div>
+
+                            <div class="card swiper-slide slide0">
+                                 <img src="./public/images/pexels-elina-fairytale-3865530.jpg" alt="">
+                            </div>
+
+                            <div class="card swiper-slide">
+                                <img src="./public/images/pexels-gustavo-fring-5622040.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="swiper-button-next swiper-navBtn"></div>
+                    <div class="swiper-button-prev swiper-navBtn"></div>
+                    <div class="swiper-pagination"></div>
                 </div>
 
-                <div class="slider__controls">
-
-                </div>
             </div>
-
-
         </div>
 
         <div class="testimonies">
@@ -481,6 +505,10 @@
                 </div>
         </footer>
     </div>
+    <script src="swiper-bundle.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
     <script src='public/js/script.js' ></script>
 </body>
 </html>

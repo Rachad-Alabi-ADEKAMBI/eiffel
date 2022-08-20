@@ -11,6 +11,7 @@ $grey: grey;
 $bg: #FBFBFB;
 $black-dark: #1f2022;
 $black-text: #3c3e3e;
+$opac: #9C9D9D;
 
 @mixin title ($color:$yellow) {
     font-family: 'Vogue', sans-serif;
@@ -53,6 +54,7 @@ $black-text: #3c3e3e;
     height: 40px;
     width: 250px;
     text-align: center;
+    border-radius: 5px;
     display: table;
 }
 
@@ -144,6 +146,10 @@ p{
     position: relative;
     }
 
+    :root {
+        --swiper-theme-color: $yellow;
+    }
+
     .header{
         width: 100%;
         display: block;
@@ -165,7 +171,7 @@ p{
 
                     i{
                         margin: 5px;
-                        color: $white;
+                        color: $yellow;
                     }
                 }
             }
@@ -223,8 +229,6 @@ p{
 
                 }
 
-
-
                 .adress{
                     color: $black;
                     margin: auto 0 auto 0;
@@ -242,6 +246,12 @@ p{
                         font-weight: normal;
 
                         strong{
+                            font-size: 0.9em;
+                            font-weight: normal ;
+                            width: 100%;
+                        }
+
+                        span{
                             font-size: 0.9em;
                             font-weight: normal ;
                             width: 100%;
@@ -325,6 +335,113 @@ p{
 
         }
     }
+
+    ::selection{
+        background: rgba(23,162,184,0.3);
+        color: $yellow;
+      }
+
+      .wrapper{
+        width: 100%;
+        height: 100vh;
+        margin: 0px auto 10px auto;
+      //  box-shadow: 0px 10px 15px rgba(0,0,0,0.1);
+      }
+      .wrapper header{
+        font-size: 30px;
+        font-weight: 600;
+        padding-bottom: 20px;
+      }
+      .wrapper nav{
+        position: relative;
+        width: 100%;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        background: $black-dark;
+        padding-top: 5px;
+      }
+      .wrapper nav label{
+        display: block;
+        width: 100%;
+        text-align: center;
+        cursor: pointer;
+        position: relative;
+        z-index: 1;
+        color: white;
+        transition: all 0.3s ease;
+      }
+      .wrapper nav label:hover{
+       color: $yellow;
+      }
+      #el:checked ~ nav label.el,
+      #me:checked ~ nav label.me,
+      #hy:checked ~ nav label.hy,
+      #sv:checked ~ nav label.sv,
+        #sc:checked ~ nav label.sc,
+        #tp:checked ~ nav label.tp{
+        color: $yellow;
+      }
+
+      nav .slider{
+        position: absolute;
+        height: 100%;
+        width: 20%;
+        left: 0;
+        bottom: 0;
+        z-index: 0;
+        border-radius: 5px;
+      color:$yellow;
+        transition: all 0.3s ease;
+      }
+      input[type="radio"]{
+        display: none;
+      }
+      #me:checked ~ nav .slider{
+        left: 20%;
+      }
+      #hy:checked ~ nav .slider{
+        left: 40%;
+      }
+      #sv:checked ~ nav .slider{
+        left: 60%;
+      }
+      #sc:checked ~ nav .slider{
+        left: 80%;
+      }
+      #tp:checked ~ nav .slider{
+        left: 100%;
+      }
+
+      section{
+          height: 100%;
+      }
+
+      section .content{
+        display: none;
+        height: 80%;
+        width: 100%;
+      }
+      #el:checked ~ section .content-1,
+      #me:checked ~ section .content-2,
+      #hy:checked ~ section .content-3,
+      #sv:checked ~ section .content-4,
+      #sc:checked ~ section .content-5,
+      #tp:checked ~ section .content-6{
+        display: block;
+      }
+      section .content .title{
+        font-size: 21px;
+        font-weight: 500;
+        margin: 30px 0 10px 0;
+      }
+      section .content p{
+      text-align: justify;
+      }
+
+
+
 
     .hero{
         @include hero();
@@ -469,16 +586,23 @@ p{
                 margin: 40px auto;
 
                     .speciality{
-                        position: relative;
                         margin: 15px;
                         @include image;
-                        width: 250px;
-                        height: 220px;
+                        width: 300px;
+                        height: 300px;
+                        background-color: $opac;
+                        border-radius: 15px;
+                        display: table;
+                        padding-top: 15px;
+
 
                         img{
-                            width: 100%;
-                            height: 100%;
+                            width: 200px;
+                            height: 200px;
                             @include image();
+                            display: table-cell;
+                            vertical-align: middle;
+                            margin: auto;
                         }
 
                         h3{
@@ -495,7 +619,7 @@ p{
 
     .center{
         background-color: $black;
-        height: 500px;
+        height: auto;
         text-align: center;
         padding-top: 40px;
 
@@ -509,29 +633,102 @@ p{
         .text{
 
             @include content();
-            margin: 50px auto;
+            margin: 50px auto 10px auto;
             color: $white;
             font-family: 'libre Baskerville', sans-serif;
         }
 
         .slider{
-            @include content();
-            @include flex();
-            margin: 60px auto;
+            height: 70vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 10px auto;
+          }
 
-            &__images{
-                @include content();
-                @include flex();
-                margin: auto;
-                img{
-                    flex: 1;
-                    @include image();
-                    width: 200px;
-                    height: 200px;
-                    margin: 0px ;
-                }
+
+          .slide-container{
+            width: 100%;
+            padding: 0px 0;
+            display: flex;
+            height: 70vh;
+            background-color: black;
+            align-items: center;
+            text-align: center;
+          }
+          .slide-content{
+            overflow: hidden;
+            width: 100%;
+            margin: auto;
+            text-align: center;
+            border-radius: 15px;
+          }
+
+          .card-wrapper{
+            width: 700px;
+            margin: auto;
+            text-align: center;
+            display: flex;
+            flex-direction: row;
+            justify-content: baseline;
+
+          }
+          .card{
+            width: 350px;
+            height: 230px;
+            border-radius: 15px;
+            margin: 10px auto;
+          }
+
+          .card img{
+            width: 100%;
+            height: 100%;
+            border-radius: 15px;
+          }
+
+          .swiper-navBtn{
+            color: #E0C15B;
+            transition: color 0.3s ease;
+          }
+          .swiper-navBtn:hover{
+            color: #E0C15B;
+          }
+          .swiper-navBtn::before,
+          .swiper-navBtn::after{
+            font-size: 35px;
+          }
+          .swiper-button-next{
+            right: 0;
+            color: $yellow;
+          }
+          .swiper-button-prev{
+            left: 0;
+            color: $yellow;
+          }
+
+          .swiper-pagination{
+            color: $yellow;
+          }
+          .swiper-pagination-bullet{
+            opacity: 1;
+            color: $yellow;
+            background-color: $yellow;
+          }
+          .swiper-pagination-bullet-active{
+            background-color: $yellow;
+            color: $yellow;
+          }
+
+          @media screen and (max-width: 768px) {
+            .slide-content{
+              margin: 0 10px;
             }
-        }
+            .swiper-navBtn{
+              display: none;
+            }
+          }
+
+
     }
 
     .testimonies{
@@ -643,7 +840,7 @@ p{
                 }
 
                 &__info{
-                    background-color: $black-text;
+                    background-color: $black-dark;
                     text-align: left;
                     position: absolute;
                     width: 260px;
@@ -685,8 +882,6 @@ p{
                 color: white;
             }
         }
-
-
     }
 
     .speciality-hero{
@@ -719,6 +914,7 @@ p{
 
             a{
                 color: white;
+                display: table-cell;
                 font-weight: bold;
                 font-family: 'Poppins';
                 vertical-align: middle;
@@ -727,7 +923,205 @@ p{
        }
     }
 
-    .content{
+    .speciality-hero2{
+        @include hero();
+        background: url('../images/pexels-orhun-rüzgar-öz-10822254.jpg');
+         background-size: cover;
+         background-repeat: no-repeat;
+         background-position: center;
+
+
+        h1{
+         @include title();
+         margin: 150px auto 50px auto;
+         color: $white;
+         text-transform: uppercase;
+        }
+
+        .text{
+             color: $white;
+             @include text();
+             width: 50%;
+        }
+
+        .btn{
+             height: 40px;
+             margin: 30px auto;
+             border: 3px solid $white;
+             display: table;
+             background-color: none;
+             width: 200px;
+
+
+             a{
+                 color: white;
+                 display: table-cell;
+                 font-weight: bold;
+                 font-family: 'Poppins';
+                 vertical-align: middle;
+                 margin: auto;
+             }
+        }
+     }
+
+     .speciality-hero3{
+        @include hero();
+        background: url('../images/pexels-elina-fairytale-3865530.jpg');
+         background-size:cover;
+         background-repeat: no-repeat;
+
+
+        h1{
+         @include title();
+         margin: 150px auto 50px auto;
+         color: $white;
+        }
+
+        .text{
+             color: $white;
+             @include text();
+             width: 50%;
+        }
+
+        .btn{
+             height: 40px;
+             margin: 30px auto;
+             border: 3px solid $white;
+             display: table;
+             background-color: none;
+             width: 200px;
+
+
+             a{
+                 color: white;
+                 font-weight: bold;
+                 display: table-cell;
+                 font-family: 'Poppins';
+                 vertical-align: middle;
+                 margin: auto;
+             }
+        }
+     }
+
+     .speciality-hero4{
+        @include hero();
+        background: url('../images/27de1f60e3c1a90a389aa6794cef999b.jpeg');
+         background-size:cover;
+         background-repeat: no-repeat;
+
+
+        h1{
+         @include title();
+         margin: 150px auto 50px auto;
+         color: $white;
+        }
+
+        .text{
+             color: $white;
+             @include text();
+             width: 50%;
+        }
+
+        .btn{
+             height: 40px;
+             margin: 30px auto;
+             border: 3px solid $white;
+             display: table;
+             background-color: none;
+             width: 200px;
+
+
+             a{
+                 color: white;
+                 font-weight: bold;
+                 display: table-cell;
+                 font-family: 'Poppins';
+                 vertical-align: middle;
+                 margin: auto;
+             }
+        }
+     }
+
+     .speciality-hero5{
+        @include hero();
+        background: url('../images/pexels-samad-ismayilov-735552_r@2x.png');
+         background-size:cover;
+         background-repeat: no-repeat;
+
+
+        h1{
+         @include title();
+         margin: 150px auto 50px auto;
+         color: $white;
+        }
+
+        .text{
+             color: $white;
+             @include text();
+             width: 50%;
+        }
+
+        .btn{
+             height: 40px;
+             margin: 30px auto;
+             border: 3px solid $white;
+             display: table;
+             background-color: none;
+             width: 200px;
+
+
+             a{
+                 color: white;
+                 font-weight: bold;
+                 display: table-cell;
+                 font-family: 'Poppins';
+                 vertical-align: middle;
+                 margin: auto;
+             }
+        }
+     }
+
+     .speciality-hero6{
+        @include hero();
+        background: url('../images/pexels-elina-fairytale-3865530.jpg');
+         background-size:cover;
+         background-repeat: no-repeat;
+
+
+        h1{
+         @include title();
+         margin: 150px auto 50px auto;
+         color: $white;
+        }
+
+        .text{
+             color: $white;
+             @include text();
+             width: 50%;
+        }
+
+        .btn{
+             height: 40px;
+             margin: 30px auto;
+             border: 3px solid $white;
+             display: table;
+             background-color: none;
+             width: 200px;
+
+
+             a{
+                 color: white;
+                 font-weight: bold;
+                 display: table-cell;
+                 font-family: 'Poppins';
+                 vertical-align: middle;
+                 margin: auto;
+             }
+        }
+     }
+
+
+    .inner{
         width: 100%;
         @include flex;
         height: auto;
@@ -742,7 +1136,7 @@ p{
 
                 .subtitle{
                     @include subtitle();
-                    margin: 0px auto 20px auto;
+                    margin: 10px auto 20px auto;
                     width: 70%;
                 }
 
@@ -751,14 +1145,31 @@ p{
                     @include text();
                     margin: 40px auto;
                     text-align: left;
+                }
 
-                    ul{
+                ul{
+                    text-align: left;
+                    margin: 40px auto;
+                    width: 80%;
+                     li{
+                        margin: 5px auto auto 0;
+                        @include flex();
+                        justify-content: start;
+                        list-style: none;
                         text-align: left;
-                        margin: 40px auto;
-                        width: 70%;
-                        li{
-                            margin: 40px auto;
 
+                        .circle{
+                            width: 25px;
+                            height: 15px;
+                            background-color: $black-text;
+                            border-radius: 20px;
+                            font-weight: bold;
+                            border: 1px $black-dark solid;
+                            color: $white;
+                            text-align: center;
+                            padding-bottom: 11px;
+                            margin-right: 10px;
+                            margin-left: 0;
                         }
                     }
                 }
@@ -856,6 +1267,7 @@ p{
                 @include flex(column);
                 text-align: center;
                 width: 250px;
+                margin: 20px auto 10px auto;
 
                 img{
                     width: 200px;
@@ -880,11 +1292,8 @@ p{
 
         .link{
             @include link();
-            height: 40px;
-            border-radius: 5px;
             margin: auto;
-            padding-top: 15px;
-            text-align: center
+
         }
     }
 
@@ -1127,6 +1536,7 @@ p{
 
                     .avis-authorr{
                         @include flex();
+                        justify-content: start;
                         height: auto;
                         width: 100%;
 
@@ -1135,10 +1545,11 @@ p{
                             height: 40px;
                             border-radius: 30px;
                             float: left;
+                            margin: auto 10px auto 0;
                         }
 
                         .name{
-                            float: right;
+                            margin: auto 5px;
                             span{
                                 font-weight: bold;
                                 color: $yellow;
@@ -1168,7 +1579,11 @@ p{
 
 
 
-                    img{
+                   .img{
+                    background-image: url('../images/pexels-samad-ismayilov-735552_oy.png');
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
                         width: 400px;
                         height: 350px;
                         @include image();
@@ -1176,7 +1591,7 @@ p{
                         position: absolute;
                         top: 40px;
                         right: 0;
-                    }
+                   }
             }
         }
     }
@@ -1314,6 +1729,16 @@ p{
                 .linkedin{
                     margin: 30px auto auto 0;
                     text-align: left;
+                    padding: 0;
+                    cursor: pointer;
+                    padding: 0;
+
+                    i{
+                        font-size: 2em;
+                        color: pink;
+                        height: 100%;
+                    background-color: $yellow
+                    }
                 }
             }
 
@@ -1452,6 +1877,104 @@ p{
         }
     }
 
+/*slider code*/
+.slide-container{
+    max-width: 1120px;
+    width: 100%;
+    padding: 40px 0;
+  }
+  .slide-content{
+    margin: 0 40px;
+    overflow: hidden;
+    border-radius: 25px;
+  }
+  .card{
+    border-radius: 25px;
+    background-color: #FFF;
+  }
+  .image-content,
+  .card-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 14px;
+  }
+  .image-content{
+    position: relative;
+    row-gap: 5px;
+    padding: 25px 0;
+  }
+  .overlay{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    border-radius: 25px 25px 0 25px;
+  }
+  .overlay::before,
+  .overlay::after{
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: -40px;
+    height: 40px;
+    width: 40px;
+    background-color: #E0C15B;
+  }
+  .overlay::after{
+    border-radius: 0 25px 0 0;
+    background-color: #FFF;
+  }
+  .card-image{
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background: #FFF;
+    padding: 3px;
+  }
+  .card-image .card-img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #E0C15B;
+  }
+  .swiper-navBtn{
+    color: #E0C15B;
+    transition: color 0.3s ease;
+  }
+  .swiper-navBtn:hover{
+    color: #E0C15B;
+  }
+  .swiper-navBtn::before,
+  .swiper-navBtn::after{
+    font-size: 35px;
+  }
+  .swiper-button-next{
+    right: 0;
+  }
+  .swiper-button-prev{
+    left: 0;
+  }
+  .swiper-pagination-bullet{
+    background-color: #E0C15B;
+    opacity: 1;
+  }
+  .swiper-pagination-bullet-active{
+    background-color: black;
+  }
+
+  @media screen and (max-width: 768px) {
+    .slide-content{
+      margin: 0 10px;
+    }
+    .swiper-navBtn{
+      display: none;
+    }
+  }
 
   /*responsive for 1024px*/
   @media screen and (min-width: 1024px) and (max-width: 1279px){
@@ -1507,6 +2030,15 @@ p{
             }
         }
 
+
+        .wrapper{
+            height: 70vh;
+        }
+
+        .wrapper nav{
+            height: 40px;
+          }
+
         .testimonies{
             &__list{
                 justify-content: space-between;
@@ -1526,27 +2058,37 @@ p{
             }
         }
 
-        .content{
+        .inner{
             margin: 10px auto;
+            width: 100%;
             &__image{
-
                 &__content{
                     .item{
                         img{
                             width: 40px;
                             height: 40px;
+                            margin: 5px auto;
                         }
                     }
                 }
                 img{
+                    margin: 90px auto;
                     width:  400px;
                     height: 400px;
                 }
             }
 
             &_text{
-                width: 95%;
-                padding-top: 10px;
+                width: 100%;
+
+                .subtitle{
+                    width: 90%;
+                    margin: 0px auto  20px auto;
+                }
+
+                .text{
+                    width: 90%;
+                }
             }
         }
 
@@ -1641,6 +2183,9 @@ p{
    /*responsive for 768px*/
    @media screen and (min-width: 768px) and (max-width: 1023px){
     .container{
+        .subtitle{
+            font-size: 2em;
+        }
         .header{
             &__main{
                 &__content{
@@ -1688,6 +2233,10 @@ p{
                         margin: auto 5px auto auto;
                         line-height: 1.2em;
                         letter-spacing: 0.05em;
+
+                        .adress-box{
+                            width: 150px;
+                        }
                     }
                 }
             }
@@ -1699,6 +2248,12 @@ p{
             }
         }
 
+        .hero{
+            &__main{
+                width: 60%;
+            }
+        }
+
          .about{
             height: auto;
             display: block;
@@ -1706,6 +2261,16 @@ p{
 
             &__infos{
                 margin: auto;
+
+                &__content{
+                .numbers{
+                    .number{
+                        span{
+                            font-size: 2em;
+                        }
+                    }
+                }
+                }
             }
 
             &__image{
@@ -1722,14 +2287,22 @@ p{
         .specialities{
             &__list{
                 width: 95%;
+                height: auto    ;
+
 
                 .speciality{
                     width: 220px;
                     height: 190px;
                     margin: 5px;
 
+                    img{
+                        width: 150px;
+                        height: 150px;
+                    }
+
                     h3{
-                        margin: -110px auto;
+                        margin: -90px auto;
+                        font-size: 1em;
                     }
                 }
 
@@ -1763,17 +2336,60 @@ p{
         }
 
         .blog{
+            margin: 15px auto 120px auto;
+            height: auto;
             .cards{
                 width: 95%;
 
                 &__card{
                     width: 200px;
                     height: 280px;
+
+                    &__info{
+                        width: 190px;
+                        height: 40%;
+                        line-height: 1em;
+
+                        h4{
+                            font-size: 1em;
+                        }
+
+                        .text{
+                            width: 100%;
+                            font-size: 0.8em;
+                        }
+
+                        .time{
+                           width: 100%;
+                           font-size: 0.8em;
+                        }
+                    }
                 }
+            }
+
+            .link{
+                margin: 10px auto 40px auto;
             }
         }
 
-        .content{
+        .wrapper{
+            height: 100vh;
+            margin-bottom: 30px;
+        }
+
+        .wrapper nav{
+            height: 45px;
+          }
+
+          .slider{
+            height: 50vh;
+          }
+
+          .slide-container{
+            height: 50vh
+          }
+
+        .inner{
             @include flex(column);
             text-align: center;
 
@@ -1910,9 +2526,23 @@ p{
 
    /*responsive for 575px*/
 @media screen and (min-width: 575px) and (max-width: 767px){
-    .hero{
-
+    .subtitle{
+        font-size: 1.8em;
     }
+
+    .hero{
+        &__main{
+            width: 60%;
+        }
+    }
+
+    .wrapper{
+        height: 75vh;
+    }
+
+    .wrapper nav{
+        height: 60px;
+      }
 
     .header{
         &__main{
@@ -1961,6 +2591,10 @@ p{
                     margin: auto 0px auto auto;
                     line-height: 1.2em;
                     letter-spacing: 0.05em;
+
+                    .adress-box{
+                        width: 140px;
+                    }
                 }
             }
         }
@@ -2035,6 +2669,14 @@ p{
 
             &__content{
                 margin: 10px auto;
+
+                .numbers{
+                    .number{
+                        span{
+                            font-size: 2em;
+                        }
+                    }
+                }
             }
 
 
@@ -2054,35 +2696,41 @@ p{
             width: 95%;
             .speciality{
                 width: 200px;
-                height: 200px;
+                height: 250px;
+
+                img{
+                    width: 170px;
+                    height: 170px;
+                }
+
+                h3{
+                    margin: -120px auto;
+                }
             }
         }
     }
 
     .center{
         height: 550px;
+
         .slider{
-            width: 95%;
-
-            &__images{
-                width: 100%;
-
-                img{
-                    width: 150px;
-                    height: 150px;
-                }
-            }
+            height: 60vh;
         }
+
+        .slide-container{
+            height: 60vh;
+        }
+
     }
 
     .testimonies__list{
         height: auto;
     }
 
-    .content{
+    .inner{
         @include flex(column);
         text-align: center;
-        margin: 5px auto;
+        margin: 0px auto;
 
         &__text{
             text-align: center;
@@ -2105,7 +2753,7 @@ p{
                 height: 160px;
                 margin: auto 0;
                 .item{
-                    width: 220px;
+                    width: 200px;
                     margin: 10px;
                     img{
                         width: 40px;
@@ -2115,6 +2763,7 @@ p{
             }
 
             img{
+                margin: 80px auto;
                 width: 350px;
                 height: 280px;
             }
@@ -2144,7 +2793,26 @@ p{
 
     .price{
         &__list{
-            width: 95%;
+            width: 100%;
+
+            .price-card{
+                width: 200px;
+                margin-top: 15px;
+
+                img{
+                    width: 150px;
+                    height: 150px;
+                }
+
+                h3{
+                    margin-left: 0;
+                    margin: 40px auto auto 0;
+                }
+
+                .amount{
+                    margin-left: 0;
+                }
+            }
         }
     }
 
@@ -2204,11 +2872,40 @@ p{
 
 /*responsive for 350px*/
 @media screen and (min-width: 350px) and (max-width: 574px){
+    .subtitle, h2{
+        font-size: 1.5em;
+    }
+
     .hero{
         &__main{
             width: 90%;
+
+            .line{
+                .v{
+                    width: 40%;
+                }
+            }
         }
     }
+
+
+
+    .wrapper{
+        height: 75vh;
+        margin-bottom: 50px;
+    }
+
+    .wrapper nav{
+        height: auto;
+        line-height: 1em;
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+    .wrapper nav label{
+        margin: 5px auto;
+    }
+
 
     .header{
 
@@ -2285,6 +2982,20 @@ p{
         }
     }
 
+    .adress{
+        margin: auto 5px auto auto;
+        line-height: 1.2em;
+        letter-spacing: 0.05em;
+        width: 100%;
+
+        .adress-box{
+                span{
+                    width: 100%;
+                }
+
+        }
+    }
+
     .about{
         height: auto;
         text-align: center;
@@ -2300,7 +3011,7 @@ p{
                 .numbers{
                     .number{
                         span{
-                            font-size: 2em;
+                            font-size: 1.8em;
                         }
                     }
                 }
@@ -2332,8 +3043,15 @@ p{
                 margin: 5px;
 
                 h3{
-                    margin: -90px auto;
+                    margin: -70px auto;
+                    font-size: 0.9em;
                 }
+
+                img{
+                    width: 110px;
+                    height: 110px;
+                }
+
             }
         }
     }
@@ -2371,17 +3089,26 @@ p{
         .cards{
             height: auto;
             text-align: center;
+            margin-bottom: 10px;
 
             &__card{
-                margin: 15px auto 10px auto;
+                margin: 55px auto 20px auto;
+                height: 450px;
 
+                &__info{
+                    height: 35%;
+                }
             }
+        }
+
+        .link{
+            margin: 10px auto 100px auto;
         }
 
 
     }
 
-    .content{
+    .inner{
         @include flex(column);
         text-align: center;
         margin: 5px auto;
@@ -2493,7 +3220,6 @@ p{
             }
         }
     }
-
 
     .avis{
         padding-bottom: 50px;

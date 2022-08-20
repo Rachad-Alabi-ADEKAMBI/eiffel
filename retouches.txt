@@ -2,11 +2,4 @@ Page d'accueil =>
 
 - Menu responsive, pourquoi il y a une croix qui reste apparente ? De plus la taille des polices n’est pas adapté  pour mobile lorsque que le menu est ouvert, on ne voit rien.
 
-
-- Comme je l’avais expliqué par message sur 5 euros il est sensé avoir un tabs navigation
-exemple => https://mdbootstrap.com/docs/standard/navigation/tabs/
-Exemple fonctionnement**
-
-cette partie ci dessus doit être au dessus des vignettes de spécialités et les vignettes doivent de ce fait changer en fonction du tabs sélectionner (sans rafraichir la page).
-
 - La partie notre centre et nos équipes comme indiqué sur la maquette est un slider.
