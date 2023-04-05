@@ -1,2 +1,1 @@
-# eiffel
-html template for a spa 
+I completed this side project where I implemented an HTML version of a Figma template for a beauty shop. Utilizing my skills in HTML, CSS, JAVASCRIPT , and Bootstrap, I was able to create a website design that effectively translated the original sketch to the digital realm. I was particularly drawn to the design, and as a result, was eager to replicate it as closely as possible. To keep track of the various iterations of my work, I utilized Git for version control
